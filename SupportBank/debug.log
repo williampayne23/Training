@@ -1,0 +1,696 @@
+[2019-07-16T14:56:38.155] [TRACE] file - Passing csv line 1
+[2019-07-16T14:56:38.162] [INFO] file - Parsing date 01/01/2015
+[2019-07-16T14:56:38.167] [INFO] file - Parsing amount 10.54 to 10.54
+[2019-07-16T14:56:38.168] [INFO] file - Creating new user Laura B
+[2019-07-16T14:56:38.168] [INFO] file - Creating new user Sarah T
+[2019-07-16T14:56:38.169] [TRACE] file - Passing csv line 2
+[2019-07-16T14:56:38.169] [INFO] file - Parsing date 04/01/2015
+[2019-07-16T14:56:38.170] [INFO] file - Parsing amount 3.22 to 3.22
+[2019-07-16T14:56:38.171] [INFO] file - Creating new user Stephen S
+[2019-07-16T14:56:38.172] [INFO] file - Creating new user Gergana I
+[2019-07-16T14:56:38.172] [TRACE] file - Passing csv line 3
+[2019-07-16T14:56:38.173] [INFO] file - Parsing date 07/01/2015
+[2019-07-16T14:56:38.174] [INFO] file - Parsing amount 9.93 to 9.93
+[2019-07-16T14:56:38.174] [INFO] file - Creating new user Ben B
+[2019-07-16T14:56:38.175] [INFO] file - Creating new user Jon A
+[2019-07-16T14:56:38.176] [TRACE] file - Passing csv line 4
+[2019-07-16T14:56:38.176] [INFO] file - Parsing date 11/01/2015
+[2019-07-16T14:56:38.177] [INFO] file - Parsing amount 7.33 to 7.33
+[2019-07-16T14:56:38.178] [INFO] file - Creating new user Todd
+[2019-07-16T14:56:38.178] [TRACE] file - Passing csv line 5
+[2019-07-16T14:56:38.179] [INFO] file - Parsing date 12/01/2015
+[2019-07-16T14:56:38.179] [INFO] file - Parsing amount 8.94 to 8.94
+[2019-07-16T14:56:38.180] [TRACE] file - Passing csv line 6
+[2019-07-16T14:56:38.180] [INFO] file - Parsing date 15/01/2015
+[2019-07-16T14:56:38.181] [INFO] file - Parsing amount 10.19 to 10.19
+[2019-07-16T14:56:38.181] [INFO] file - Creating new user Rob S
+[2019-07-16T14:56:38.182] [TRACE] file - Passing csv line 7
+[2019-07-16T14:56:38.182] [INFO] file - Parsing date 16/01/2015
+[2019-07-16T14:56:38.183] [INFO] file - Parsing amount 0.69 to 0.69
+[2019-07-16T14:56:38.184] [TRACE] file - Passing csv line 8
+[2019-07-16T14:56:38.184] [INFO] file - Parsing date 18/01/2015
+[2019-07-16T14:56:38.185] [INFO] file - Parsing amount 10.73 to 10.73
+[2019-07-16T14:56:38.185] [TRACE] file - Passing csv line 9
+[2019-07-16T14:56:38.186] [INFO] file - Parsing date 22/01/2015
+[2019-07-16T14:56:38.187] [INFO] file - Parsing amount 0.8 to 0.8
+[2019-07-16T14:56:38.187] [TRACE] file - Passing csv line 10
+[2019-07-16T14:56:38.188] [INFO] file - Parsing date 24/01/2015
+[2019-07-16T14:56:38.188] [INFO] file - Parsing amount 8.49 to 8.49
+[2019-07-16T14:56:38.189] [INFO] file - Creating new user Chris W
+[2019-07-16T14:56:38.189] [TRACE] file - Passing csv line 11
+[2019-07-16T14:56:38.190] [INFO] file - Parsing date 27/01/2015
+[2019-07-16T14:56:38.191] [INFO] file - Parsing amount 0.52 to 0.52
+[2019-07-16T14:56:38.191] [INFO] file - Creating new user Tim L
+[2019-07-16T14:56:38.192] [TRACE] file - Passing csv line 12
+[2019-07-16T14:56:38.193] [INFO] file - Parsing date 29/01/2015
+[2019-07-16T14:56:38.193] [INFO] file - Parsing amount 9.01 to 9.01
+[2019-07-16T14:56:38.194] [INFO] file - Creating new user Sam N
+[2019-07-16T14:56:38.195] [TRACE] file - Passing csv line 13
+[2019-07-16T14:56:38.195] [INFO] file - Parsing date 01/02/2015
+[2019-07-16T14:56:38.196] [INFO] file - Parsing amount 7.53 to 7.53
+[2019-07-16T14:56:38.196] [TRACE] file - Passing csv line 14
+[2019-07-16T14:56:38.197] [INFO] file - Parsing date 02/02/2015
+[2019-07-16T14:56:38.197] [INFO] file - Parsing amount 7.43 to 7.43
+[2019-07-16T14:56:38.198] [TRACE] file - Passing csv line 15
+[2019-07-16T14:56:38.198] [INFO] file - Parsing date 04/02/2015
+[2019-07-16T14:56:38.199] [INFO] file - Parsing amount 5.78 to 5.78
+[2019-07-16T14:56:38.200] [TRACE] file - Passing csv line 16
+[2019-07-16T14:56:38.200] [INFO] file - Parsing date 06/02/2015
+[2019-07-16T14:56:38.201] [INFO] file - Parsing amount 10.29 to 10.29
+[2019-07-16T14:56:38.201] [INFO] file - Creating new user Dan W
+[2019-07-16T14:56:38.202] [TRACE] file - Passing csv line 17
+[2019-07-16T14:56:38.202] [INFO] file - Parsing date 07/02/2015
+[2019-07-16T14:56:38.203] [INFO] file - Parsing amount 7.37 to 7.37
+[2019-07-16T14:56:38.203] [TRACE] file - Passing csv line 18
+[2019-07-16T14:56:38.204] [INFO] file - Parsing date 10/02/2015
+[2019-07-16T14:56:38.205] [INFO] file - Parsing amount 9.84 to 9.84
+[2019-07-16T14:56:38.205] [TRACE] file - Passing csv line 19
+[2019-07-16T14:56:38.206] [INFO] file - Parsing date 11/02/2015
+[2019-07-16T14:56:38.206] [INFO] file - Parsing amount 0.68 to 0.68
+[2019-07-16T14:56:38.207] [TRACE] file - Passing csv line 20
+[2019-07-16T14:56:38.207] [INFO] file - Parsing date 13/02/2015
+[2019-07-16T14:56:38.208] [INFO] file - Parsing amount 6.56 to 6.56
+[2019-07-16T14:56:38.209] [TRACE] file - Passing csv line 21
+[2019-07-16T14:56:38.209] [INFO] file - Parsing date 16/02/2015
+[2019-07-16T14:56:38.210] [INFO] file - Parsing amount 1.28 to 1.28
+[2019-07-16T14:56:38.211] [TRACE] file - Passing csv line 22
+[2019-07-16T14:56:38.212] [INFO] file - Parsing date 17/02/2015
+[2019-07-16T14:56:38.213] [INFO] file - Parsing amount 11.48 to 11.48
+[2019-07-16T14:56:38.213] [TRACE] file - Passing csv line 23
+[2019-07-16T14:56:38.214] [INFO] file - Parsing date 18/02/2015
+[2019-07-16T14:56:38.214] [INFO] file - Parsing amount 4.83 to 4.83
+[2019-07-16T14:56:38.215] [TRACE] file - Passing csv line 24
+[2019-07-16T14:56:38.215] [INFO] file - Parsing date 21/02/2015
+[2019-07-16T14:56:38.216] [INFO] file - Parsing amount 0.5 to 0.5
+[2019-07-16T14:56:38.216] [TRACE] file - Passing csv line 25
+[2019-07-16T14:56:38.217] [INFO] file - Parsing date 24/02/2015
+[2019-07-16T14:56:38.217] [INFO] file - Parsing amount 9.08 to 9.08
+[2019-07-16T14:56:38.218] [TRACE] file - Passing csv line 26
+[2019-07-16T14:56:38.218] [INFO] file - Parsing date 26/02/2015
+[2019-07-16T14:56:38.219] [INFO] file - Parsing amount 4.23 to 4.23
+[2019-07-16T14:56:38.220] [TRACE] file - Passing csv line 27
+[2019-07-16T14:56:38.220] [INFO] file - Parsing date 01/03/2015
+[2019-07-16T14:56:38.221] [INFO] file - Parsing amount One Cheeseburger to NaN
+[2019-07-16T14:56:38.221] [ERROR] file - Cannot parse amount
+[2019-07-16T14:56:38.225] [TRACE] file - Passing csv line 28
+[2019-07-16T14:56:38.226] [INFO] file - Parsing date 02/03/2015
+[2019-07-16T14:56:38.227] [INFO] file - Parsing amount 1.92 to 1.92
+[2019-07-16T14:56:38.228] [TRACE] file - Passing csv line 29
+[2019-07-16T14:56:38.229] [INFO] file - Parsing date 04/03/2015
+[2019-07-16T14:56:38.229] [INFO] file - Parsing amount 9.09 to 9.09
+[2019-07-16T14:56:38.230] [TRACE] file - Passing csv line 30
+[2019-07-16T14:56:38.231] [INFO] file - Parsing date 06/03/2015
+[2019-07-16T14:56:38.232] [INFO] file - Parsing amount 9.4 to 9.4
+[2019-07-16T14:56:38.232] [TRACE] file - Passing csv line 31
+[2019-07-16T14:56:38.233] [INFO] file - Parsing date 08/03/2015
+[2019-07-16T14:56:38.234] [INFO] file - Parsing amount 11.32 to 11.32
+[2019-07-16T14:56:38.234] [TRACE] file - Passing csv line 32
+[2019-07-16T14:56:38.235] [INFO] file - Parsing date 11/03/2015
+[2019-07-16T14:56:38.236] [INFO] file - Parsing amount 11.57 to 11.57
+[2019-07-16T14:56:38.236] [TRACE] file - Passing csv line 33
+[2019-07-16T14:56:38.237] [INFO] file - Parsing date 15/03/2015
+[2019-07-16T14:56:38.238] [INFO] file - Parsing amount 2.29 to 2.29
+[2019-07-16T14:56:38.238] [TRACE] file - Passing csv line 34
+[2019-07-16T14:56:38.239] [INFO] file - Parsing date 19/03/2015
+[2019-07-16T14:56:38.239] [INFO] file - Parsing amount 9.96 to 9.96
+[2019-07-16T14:56:38.240] [TRACE] file - Passing csv line 35
+[2019-07-16T14:56:38.240] [INFO] file - Parsing date 21/03/2015
+[2019-07-16T14:56:38.241] [INFO] file - Parsing amount 7.54 to 7.54
+[2019-07-16T14:56:38.242] [TRACE] file - Passing csv line 36
+[2019-07-16T14:56:38.242] [INFO] file - Parsing date 25/03/2015
+[2019-07-16T14:56:38.243] [INFO] file - Parsing amount 2.39 to 2.39
+[2019-07-16T14:56:38.244] [TRACE] file - Passing csv line 37
+[2019-07-16T14:56:38.245] [INFO] file - Parsing date 28/03/2015
+[2019-07-16T14:56:38.246] [INFO] file - Parsing amount 5.83 to 5.83
+[2019-07-16T14:56:38.246] [TRACE] file - Passing csv line 38
+[2019-07-16T14:56:38.247] [INFO] file - Parsing date 29/03/2015
+[2019-07-16T14:56:38.248] [INFO] file - Parsing amount 10.85 to 10.85
+[2019-07-16T14:56:38.248] [TRACE] file - Passing csv line 39
+[2019-07-16T14:56:38.249] [INFO] file - Parsing date 30/03/2015
+[2019-07-16T14:56:38.249] [INFO] file - Parsing amount 8.6 to 8.6
+[2019-07-16T14:56:38.250] [TRACE] file - Passing csv line 40
+[2019-07-16T14:56:38.250] [INFO] file - Parsing date 02/04/2015
+[2019-07-16T14:56:38.251] [INFO] file - Parsing amount 1.11 to 1.11
+[2019-07-16T14:56:38.252] [TRACE] file - Passing csv line 41
+[2019-07-16T14:56:38.252] [INFO] file - Parsing date 05/04/2015
+[2019-07-16T14:56:38.253] [INFO] file - Parsing amount 0.96 to 0.96
+[2019-07-16T14:56:38.254] [TRACE] file - Passing csv line 42
+[2019-07-16T14:56:38.254] [INFO] file - Parsing date 09/04/2015
+[2019-07-16T14:56:38.255] [INFO] file - Parsing amount 11.79 to 11.79
+[2019-07-16T14:56:38.255] [TRACE] file - Passing csv line 43
+[2019-07-16T14:56:38.256] [INFO] file - Parsing date 12/04/2015
+[2019-07-16T14:56:38.256] [INFO] file - Parsing amount 8.37 to 8.37
+[2019-07-16T14:56:38.257] [TRACE] file - Passing csv line 44
+[2019-07-16T14:56:38.258] [INFO] file - Parsing date 13/04/2015
+[2019-07-16T14:56:38.258] [INFO] file - Parsing amount 1.27 to 1.27
+[2019-07-16T14:56:38.259] [TRACE] file - Passing csv line 45
+[2019-07-16T14:56:38.260] [INFO] file - Parsing date 15/04/2015
+[2019-07-16T14:56:38.260] [INFO] file - Parsing amount 8.5 to 8.5
+[2019-07-16T14:56:38.261] [TRACE] file - Passing csv line 46
+[2019-07-16T14:56:38.262] [INFO] file - Parsing date 19/04/2015
+[2019-07-16T14:56:38.262] [INFO] file - Parsing amount 8.91 to 8.91
+[2019-07-16T14:56:38.263] [TRACE] file - Passing csv line 47
+[2019-07-16T14:56:38.263] [INFO] file - Parsing date 23/04/2015
+[2019-07-16T14:56:38.264] [INFO] file - Parsing amount 8.1 to 8.1
+[2019-07-16T14:56:38.264] [TRACE] file - Passing csv line 48
+[2019-07-16T14:56:38.265] [INFO] file - Parsing date 24/04/2015
+[2019-07-16T14:56:38.266] [INFO] file - Parsing amount 6.38 to 6.38
+[2019-07-16T14:56:38.266] [TRACE] file - Passing csv line 49
+[2019-07-16T14:56:38.267] [INFO] file - Parsing date 26/04/2015
+[2019-07-16T14:56:38.267] [INFO] file - Parsing amount 8.44 to 8.44
+[2019-07-16T14:56:38.268] [TRACE] file - Passing csv line 50
+[2019-07-16T14:56:38.268] [INFO] file - Parsing date 27/04/2015
+[2019-07-16T14:56:38.269] [INFO] file - Parsing amount 10.91 to 10.91
+[2019-07-16T14:56:38.269] [TRACE] file - Passing csv line 51
+[2019-07-16T14:56:38.270] [INFO] file - Parsing date Last Thursday
+[2019-07-16T14:56:38.270] [ERROR] file - Invalid date
+[2019-07-16T14:56:38.272] [INFO] file - Parsing amount 5.42 to 5.42
+[2019-07-16T14:56:38.272] [INFO] file - No command string given exiting
+[2019-07-16T15:03:19.081] [TRACE] file - Passing csv line 1
+[2019-07-16T15:03:19.087] [INFO] file - Parsing date 01/01/2015
+[2019-07-16T15:03:19.092] [INFO] file - Parsing amount 10.54 to 10.54
+[2019-07-16T15:03:19.093] [INFO] file - Creating new user Laura B
+[2019-07-16T15:03:19.093] [INFO] file - Creating new user Sarah T
+[2019-07-16T15:03:19.094] [TRACE] file - Passing csv line 2
+[2019-07-16T15:03:19.095] [INFO] file - Parsing date 04/01/2015
+[2019-07-16T15:03:19.096] [INFO] file - Parsing amount 3.22 to 3.22
+[2019-07-16T15:03:19.096] [INFO] file - Creating new user Stephen S
+[2019-07-16T15:03:19.097] [INFO] file - Creating new user Gergana I
+[2019-07-16T15:03:19.098] [TRACE] file - Passing csv line 3
+[2019-07-16T15:03:19.098] [INFO] file - Parsing date 07/01/2015
+[2019-07-16T15:03:19.099] [INFO] file - Parsing amount 9.93 to 9.93
+[2019-07-16T15:03:19.100] [INFO] file - Creating new user Ben B
+[2019-07-16T15:03:19.100] [INFO] file - Creating new user Jon A
+[2019-07-16T15:03:19.101] [TRACE] file - Passing csv line 4
+[2019-07-16T15:03:19.101] [INFO] file - Parsing date 11/01/2015
+[2019-07-16T15:03:19.102] [INFO] file - Parsing amount 7.33 to 7.33
+[2019-07-16T15:03:19.102] [INFO] file - Creating new user Todd
+[2019-07-16T15:03:19.103] [TRACE] file - Passing csv line 5
+[2019-07-16T15:03:19.104] [INFO] file - Parsing date 12/01/2015
+[2019-07-16T15:03:19.104] [INFO] file - Parsing amount 8.94 to 8.94
+[2019-07-16T15:03:19.105] [TRACE] file - Passing csv line 6
+[2019-07-16T15:03:19.105] [INFO] file - Parsing date 15/01/2015
+[2019-07-16T15:03:19.106] [INFO] file - Parsing amount 10.19 to 10.19
+[2019-07-16T15:03:19.106] [INFO] file - Creating new user Rob S
+[2019-07-16T15:03:19.107] [TRACE] file - Passing csv line 7
+[2019-07-16T15:03:19.107] [INFO] file - Parsing date 16/01/2015
+[2019-07-16T15:03:19.108] [INFO] file - Parsing amount 0.69 to 0.69
+[2019-07-16T15:03:19.109] [TRACE] file - Passing csv line 8
+[2019-07-16T15:03:19.109] [INFO] file - Parsing date 18/01/2015
+[2019-07-16T15:03:19.110] [INFO] file - Parsing amount 10.73 to 10.73
+[2019-07-16T15:03:19.110] [TRACE] file - Passing csv line 9
+[2019-07-16T15:03:19.111] [INFO] file - Parsing date 22/01/2015
+[2019-07-16T15:03:19.112] [INFO] file - Parsing amount 0.8 to 0.8
+[2019-07-16T15:03:19.112] [TRACE] file - Passing csv line 10
+[2019-07-16T15:03:19.113] [INFO] file - Parsing date 24/01/2015
+[2019-07-16T15:03:19.113] [INFO] file - Parsing amount 8.49 to 8.49
+[2019-07-16T15:03:19.114] [INFO] file - Creating new user Chris W
+[2019-07-16T15:03:19.114] [TRACE] file - Passing csv line 11
+[2019-07-16T15:03:19.115] [INFO] file - Parsing date 27/01/2015
+[2019-07-16T15:03:19.115] [INFO] file - Parsing amount 0.52 to 0.52
+[2019-07-16T15:03:19.116] [INFO] file - Creating new user Tim L
+[2019-07-16T15:03:19.117] [TRACE] file - Passing csv line 12
+[2019-07-16T15:03:19.117] [INFO] file - Parsing date 29/01/2015
+[2019-07-16T15:03:19.118] [INFO] file - Parsing amount 9.01 to 9.01
+[2019-07-16T15:03:19.118] [INFO] file - Creating new user Sam N
+[2019-07-16T15:03:19.119] [TRACE] file - Passing csv line 13
+[2019-07-16T15:03:19.119] [INFO] file - Parsing date 01/02/2015
+[2019-07-16T15:03:19.120] [INFO] file - Parsing amount 7.53 to 7.53
+[2019-07-16T15:03:19.120] [TRACE] file - Passing csv line 14
+[2019-07-16T15:03:19.121] [INFO] file - Parsing date 02/02/2015
+[2019-07-16T15:03:19.122] [INFO] file - Parsing amount 7.43 to 7.43
+[2019-07-16T15:03:19.122] [TRACE] file - Passing csv line 15
+[2019-07-16T15:03:19.123] [INFO] file - Parsing date 04/02/2015
+[2019-07-16T15:03:19.123] [INFO] file - Parsing amount 5.78 to 5.78
+[2019-07-16T15:03:19.124] [TRACE] file - Passing csv line 16
+[2019-07-16T15:03:19.124] [INFO] file - Parsing date 06/02/2015
+[2019-07-16T15:03:19.125] [INFO] file - Parsing amount 10.29 to 10.29
+[2019-07-16T15:03:19.125] [INFO] file - Creating new user Dan W
+[2019-07-16T15:03:19.126] [TRACE] file - Passing csv line 17
+[2019-07-16T15:03:19.126] [INFO] file - Parsing date 07/02/2015
+[2019-07-16T15:03:19.127] [INFO] file - Parsing amount 7.37 to 7.37
+[2019-07-16T15:03:19.128] [TRACE] file - Passing csv line 18
+[2019-07-16T15:03:19.128] [INFO] file - Parsing date 10/02/2015
+[2019-07-16T15:03:19.129] [INFO] file - Parsing amount 9.84 to 9.84
+[2019-07-16T15:03:19.130] [TRACE] file - Passing csv line 19
+[2019-07-16T15:03:19.131] [INFO] file - Parsing date 11/02/2015
+[2019-07-16T15:03:19.131] [INFO] file - Parsing amount 0.68 to 0.68
+[2019-07-16T15:03:19.132] [TRACE] file - Passing csv line 20
+[2019-07-16T15:03:19.133] [INFO] file - Parsing date 13/02/2015
+[2019-07-16T15:03:19.133] [INFO] file - Parsing amount 6.56 to 6.56
+[2019-07-16T15:03:19.134] [TRACE] file - Passing csv line 21
+[2019-07-16T15:03:19.134] [INFO] file - Parsing date 16/02/2015
+[2019-07-16T15:03:19.135] [INFO] file - Parsing amount 1.28 to 1.28
+[2019-07-16T15:03:19.136] [TRACE] file - Passing csv line 22
+[2019-07-16T15:03:19.136] [INFO] file - Parsing date 17/02/2015
+[2019-07-16T15:03:19.137] [INFO] file - Parsing amount 11.48 to 11.48
+[2019-07-16T15:03:19.137] [TRACE] file - Passing csv line 23
+[2019-07-16T15:03:19.138] [INFO] file - Parsing date 18/02/2015
+[2019-07-16T15:03:19.138] [INFO] file - Parsing amount 4.83 to 4.83
+[2019-07-16T15:03:19.139] [TRACE] file - Passing csv line 24
+[2019-07-16T15:03:19.139] [INFO] file - Parsing date 21/02/2015
+[2019-07-16T15:03:19.140] [INFO] file - Parsing amount 0.5 to 0.5
+[2019-07-16T15:03:19.141] [TRACE] file - Passing csv line 25
+[2019-07-16T15:03:19.141] [INFO] file - Parsing date 24/02/2015
+[2019-07-16T15:03:19.142] [INFO] file - Parsing amount 9.08 to 9.08
+[2019-07-16T15:03:19.142] [TRACE] file - Passing csv line 26
+[2019-07-16T15:03:19.143] [INFO] file - Parsing date 26/02/2015
+[2019-07-16T15:03:19.143] [INFO] file - Parsing amount 4.23 to 4.23
+[2019-07-16T15:03:19.144] [TRACE] file - Passing csv line 27
+[2019-07-16T15:03:19.144] [INFO] file - Parsing date 01/03/2015
+[2019-07-16T15:03:19.145] [INFO] file - Parsing amount One Cheeseburger to NaN
+[2019-07-16T15:03:19.146] [ERROR] file - Cannot parse amount
+[2019-07-16T15:03:19.147] [TRACE] file - Passing csv line 28
+[2019-07-16T15:03:19.147] [INFO] file - Parsing date 02/03/2015
+[2019-07-16T15:03:19.148] [INFO] file - Parsing amount 1.92 to 1.92
+[2019-07-16T15:03:19.149] [TRACE] file - Passing csv line 29
+[2019-07-16T15:03:19.149] [INFO] file - Parsing date 04/03/2015
+[2019-07-16T15:03:19.150] [INFO] file - Parsing amount 9.09 to 9.09
+[2019-07-16T15:03:19.150] [TRACE] file - Passing csv line 30
+[2019-07-16T15:03:19.151] [INFO] file - Parsing date 06/03/2015
+[2019-07-16T15:03:19.151] [INFO] file - Parsing amount 9.4 to 9.4
+[2019-07-16T15:03:19.152] [TRACE] file - Passing csv line 31
+[2019-07-16T15:03:19.153] [INFO] file - Parsing date 08/03/2015
+[2019-07-16T15:03:19.153] [INFO] file - Parsing amount 11.32 to 11.32
+[2019-07-16T15:03:19.154] [TRACE] file - Passing csv line 32
+[2019-07-16T15:03:19.154] [INFO] file - Parsing date 11/03/2015
+[2019-07-16T15:03:19.155] [INFO] file - Parsing amount 11.57 to 11.57
+[2019-07-16T15:03:19.155] [TRACE] file - Passing csv line 33
+[2019-07-16T15:03:19.156] [INFO] file - Parsing date 15/03/2015
+[2019-07-16T15:03:19.156] [INFO] file - Parsing amount 2.29 to 2.29
+[2019-07-16T15:03:19.157] [TRACE] file - Passing csv line 34
+[2019-07-16T15:03:19.157] [INFO] file - Parsing date 19/03/2015
+[2019-07-16T15:03:19.158] [INFO] file - Parsing amount 9.96 to 9.96
+[2019-07-16T15:03:19.159] [TRACE] file - Passing csv line 35
+[2019-07-16T15:03:19.159] [INFO] file - Parsing date 21/03/2015
+[2019-07-16T15:03:19.160] [INFO] file - Parsing amount 7.54 to 7.54
+[2019-07-16T15:03:19.160] [TRACE] file - Passing csv line 36
+[2019-07-16T15:03:19.161] [INFO] file - Parsing date 25/03/2015
+[2019-07-16T15:03:19.162] [INFO] file - Parsing amount 2.39 to 2.39
+[2019-07-16T15:03:19.162] [TRACE] file - Passing csv line 37
+[2019-07-16T15:03:19.163] [INFO] file - Parsing date 28/03/2015
+[2019-07-16T15:03:19.164] [INFO] file - Parsing amount 5.83 to 5.83
+[2019-07-16T15:03:19.164] [TRACE] file - Passing csv line 38
+[2019-07-16T15:03:19.165] [INFO] file - Parsing date 29/03/2015
+[2019-07-16T15:03:19.166] [INFO] file - Parsing amount 10.85 to 10.85
+[2019-07-16T15:03:19.166] [TRACE] file - Passing csv line 39
+[2019-07-16T15:03:19.167] [INFO] file - Parsing date 30/03/2015
+[2019-07-16T15:03:19.167] [INFO] file - Parsing amount 8.6 to 8.6
+[2019-07-16T15:03:19.168] [TRACE] file - Passing csv line 40
+[2019-07-16T15:03:19.168] [INFO] file - Parsing date 02/04/2015
+[2019-07-16T15:03:19.169] [INFO] file - Parsing amount 1.11 to 1.11
+[2019-07-16T15:03:19.170] [TRACE] file - Passing csv line 41
+[2019-07-16T15:03:19.170] [INFO] file - Parsing date 05/04/2015
+[2019-07-16T15:03:19.171] [INFO] file - Parsing amount 0.96 to 0.96
+[2019-07-16T15:03:19.171] [TRACE] file - Passing csv line 42
+[2019-07-16T15:03:19.172] [INFO] file - Parsing date 09/04/2015
+[2019-07-16T15:03:19.172] [INFO] file - Parsing amount 11.79 to 11.79
+[2019-07-16T15:03:19.173] [TRACE] file - Passing csv line 43
+[2019-07-16T15:03:19.173] [INFO] file - Parsing date 12/04/2015
+[2019-07-16T15:03:19.174] [INFO] file - Parsing amount 8.37 to 8.37
+[2019-07-16T15:03:19.174] [TRACE] file - Passing csv line 44
+[2019-07-16T15:03:19.175] [INFO] file - Parsing date 13/04/2015
+[2019-07-16T15:03:19.175] [INFO] file - Parsing amount 1.27 to 1.27
+[2019-07-16T15:03:19.176] [TRACE] file - Passing csv line 45
+[2019-07-16T15:03:19.176] [INFO] file - Parsing date 15/04/2015
+[2019-07-16T15:03:19.177] [INFO] file - Parsing amount 8.5 to 8.5
+[2019-07-16T15:03:19.178] [TRACE] file - Passing csv line 46
+[2019-07-16T15:03:19.178] [INFO] file - Parsing date 19/04/2015
+[2019-07-16T15:03:19.179] [INFO] file - Parsing amount 8.91 to 8.91
+[2019-07-16T15:03:19.180] [TRACE] file - Passing csv line 47
+[2019-07-16T15:03:19.180] [INFO] file - Parsing date 23/04/2015
+[2019-07-16T15:03:19.181] [INFO] file - Parsing amount 8.1 to 8.1
+[2019-07-16T15:03:19.182] [TRACE] file - Passing csv line 48
+[2019-07-16T15:03:19.182] [INFO] file - Parsing date 24/04/2015
+[2019-07-16T15:03:19.183] [INFO] file - Parsing amount 6.38 to 6.38
+[2019-07-16T15:03:19.183] [TRACE] file - Passing csv line 49
+[2019-07-16T15:03:19.184] [INFO] file - Parsing date 26/04/2015
+[2019-07-16T15:03:19.184] [INFO] file - Parsing amount 8.44 to 8.44
+[2019-07-16T15:03:19.185] [TRACE] file - Passing csv line 50
+[2019-07-16T15:03:19.185] [INFO] file - Parsing date 27/04/2015
+[2019-07-16T15:03:19.186] [INFO] file - Parsing amount 10.91 to 10.91
+[2019-07-16T15:03:19.186] [TRACE] file - Passing csv line 51
+[2019-07-16T15:03:19.187] [INFO] file - Parsing date Last Thursday
+[2019-07-16T15:03:19.188] [ERROR] file - Invalid date
+[2019-07-16T15:03:19.188] [INFO] file - Parsing amount 5.42 to 5.42
+[2019-07-16T15:03:19.189] [INFO] file - No command string given exiting
+[2019-07-16T15:03:31.093] [TRACE] file - Passing csv line 1
+[2019-07-16T15:03:31.099] [INFO] file - Parsing date 01/01/2015
+[2019-07-16T15:03:31.104] [INFO] file - Parsing amount 10.54 to 10.54
+[2019-07-16T15:03:31.105] [INFO] file - Creating new user Laura B
+[2019-07-16T15:03:31.105] [INFO] file - Creating new user Sarah T
+[2019-07-16T15:03:31.106] [TRACE] file - Passing csv line 2
+[2019-07-16T15:03:31.107] [INFO] file - Parsing date 04/01/2015
+[2019-07-16T15:03:31.107] [INFO] file - Parsing amount 3.22 to 3.22
+[2019-07-16T15:03:31.108] [INFO] file - Creating new user Stephen S
+[2019-07-16T15:03:31.109] [INFO] file - Creating new user Gergana I
+[2019-07-16T15:03:31.109] [TRACE] file - Passing csv line 3
+[2019-07-16T15:03:31.110] [INFO] file - Parsing date 07/01/2015
+[2019-07-16T15:03:31.111] [INFO] file - Parsing amount 9.93 to 9.93
+[2019-07-16T15:03:31.111] [INFO] file - Creating new user Ben B
+[2019-07-16T15:03:31.112] [INFO] file - Creating new user Jon A
+[2019-07-16T15:03:31.113] [TRACE] file - Passing csv line 4
+[2019-07-16T15:03:31.113] [INFO] file - Parsing date 11/01/2015
+[2019-07-16T15:03:31.114] [INFO] file - Parsing amount 7.33 to 7.33
+[2019-07-16T15:03:31.115] [INFO] file - Creating new user Todd
+[2019-07-16T15:03:31.115] [TRACE] file - Passing csv line 5
+[2019-07-16T15:03:31.116] [INFO] file - Parsing date 12/01/2015
+[2019-07-16T15:03:31.116] [INFO] file - Parsing amount 8.94 to 8.94
+[2019-07-16T15:03:31.117] [TRACE] file - Passing csv line 6
+[2019-07-16T15:03:31.117] [INFO] file - Parsing date 15/01/2015
+[2019-07-16T15:03:31.118] [INFO] file - Parsing amount 10.19 to 10.19
+[2019-07-16T15:03:31.119] [INFO] file - Creating new user Rob S
+[2019-07-16T15:03:31.119] [TRACE] file - Passing csv line 7
+[2019-07-16T15:03:31.120] [INFO] file - Parsing date 16/01/2015
+[2019-07-16T15:03:31.120] [INFO] file - Parsing amount 0.69 to 0.69
+[2019-07-16T15:03:31.121] [TRACE] file - Passing csv line 8
+[2019-07-16T15:03:31.121] [INFO] file - Parsing date 18/01/2015
+[2019-07-16T15:03:31.122] [INFO] file - Parsing amount 10.73 to 10.73
+[2019-07-16T15:03:31.123] [TRACE] file - Passing csv line 9
+[2019-07-16T15:03:31.123] [INFO] file - Parsing date 22/01/2015
+[2019-07-16T15:03:31.124] [INFO] file - Parsing amount 0.8 to 0.8
+[2019-07-16T15:03:31.124] [TRACE] file - Passing csv line 10
+[2019-07-16T15:03:31.125] [INFO] file - Parsing date 24/01/2015
+[2019-07-16T15:03:31.125] [INFO] file - Parsing amount 8.49 to 8.49
+[2019-07-16T15:03:31.126] [INFO] file - Creating new user Chris W
+[2019-07-16T15:03:31.126] [TRACE] file - Passing csv line 11
+[2019-07-16T15:03:31.127] [INFO] file - Parsing date 27/01/2015
+[2019-07-16T15:03:31.127] [INFO] file - Parsing amount 0.52 to 0.52
+[2019-07-16T15:03:31.128] [INFO] file - Creating new user Tim L
+[2019-07-16T15:03:31.128] [TRACE] file - Passing csv line 12
+[2019-07-16T15:03:31.129] [INFO] file - Parsing date 29/01/2015
+[2019-07-16T15:03:31.130] [INFO] file - Parsing amount 9.01 to 9.01
+[2019-07-16T15:03:31.131] [INFO] file - Creating new user Sam N
+[2019-07-16T15:03:31.131] [TRACE] file - Passing csv line 13
+[2019-07-16T15:03:31.132] [INFO] file - Parsing date 01/02/2015
+[2019-07-16T15:03:31.133] [INFO] file - Parsing amount 7.53 to 7.53
+[2019-07-16T15:03:31.134] [TRACE] file - Passing csv line 14
+[2019-07-16T15:03:31.135] [INFO] file - Parsing date 02/02/2015
+[2019-07-16T15:03:31.135] [INFO] file - Parsing amount 7.43 to 7.43
+[2019-07-16T15:03:31.136] [TRACE] file - Passing csv line 15
+[2019-07-16T15:03:31.136] [INFO] file - Parsing date 04/02/2015
+[2019-07-16T15:03:31.137] [INFO] file - Parsing amount 5.78 to 5.78
+[2019-07-16T15:03:31.138] [TRACE] file - Passing csv line 16
+[2019-07-16T15:03:31.138] [INFO] file - Parsing date 06/02/2015
+[2019-07-16T15:03:31.138] [INFO] file - Parsing amount 10.29 to 10.29
+[2019-07-16T15:03:31.139] [INFO] file - Creating new user Dan W
+[2019-07-16T15:03:31.139] [TRACE] file - Passing csv line 17
+[2019-07-16T15:03:31.140] [INFO] file - Parsing date 07/02/2015
+[2019-07-16T15:03:31.141] [INFO] file - Parsing amount 7.37 to 7.37
+[2019-07-16T15:03:31.141] [TRACE] file - Passing csv line 18
+[2019-07-16T15:03:31.142] [INFO] file - Parsing date 10/02/2015
+[2019-07-16T15:03:31.142] [INFO] file - Parsing amount 9.84 to 9.84
+[2019-07-16T15:03:31.143] [TRACE] file - Passing csv line 19
+[2019-07-16T15:03:31.143] [INFO] file - Parsing date 11/02/2015
+[2019-07-16T15:03:31.144] [INFO] file - Parsing amount 0.68 to 0.68
+[2019-07-16T15:03:31.144] [TRACE] file - Passing csv line 20
+[2019-07-16T15:03:31.145] [INFO] file - Parsing date 13/02/2015
+[2019-07-16T15:03:31.146] [INFO] file - Parsing amount 6.56 to 6.56
+[2019-07-16T15:03:31.147] [TRACE] file - Passing csv line 21
+[2019-07-16T15:03:31.147] [INFO] file - Parsing date 16/02/2015
+[2019-07-16T15:03:31.148] [INFO] file - Parsing amount 1.28 to 1.28
+[2019-07-16T15:03:31.148] [TRACE] file - Passing csv line 22
+[2019-07-16T15:03:31.149] [INFO] file - Parsing date 17/02/2015
+[2019-07-16T15:03:31.149] [INFO] file - Parsing amount 11.48 to 11.48
+[2019-07-16T15:03:31.150] [TRACE] file - Passing csv line 23
+[2019-07-16T15:03:31.151] [INFO] file - Parsing date 18/02/2015
+[2019-07-16T15:03:31.151] [INFO] file - Parsing amount 4.83 to 4.83
+[2019-07-16T15:03:31.152] [TRACE] file - Passing csv line 24
+[2019-07-16T15:03:31.152] [INFO] file - Parsing date 21/02/2015
+[2019-07-16T15:03:31.153] [INFO] file - Parsing amount 0.5 to 0.5
+[2019-07-16T15:03:31.153] [TRACE] file - Passing csv line 25
+[2019-07-16T15:03:31.154] [INFO] file - Parsing date 24/02/2015
+[2019-07-16T15:03:31.154] [INFO] file - Parsing amount 9.08 to 9.08
+[2019-07-16T15:03:31.155] [TRACE] file - Passing csv line 26
+[2019-07-16T15:03:31.155] [INFO] file - Parsing date 26/02/2015
+[2019-07-16T15:03:31.156] [INFO] file - Parsing amount 4.23 to 4.23
+[2019-07-16T15:03:31.156] [TRACE] file - Passing csv line 27
+[2019-07-16T15:03:31.157] [INFO] file - Parsing date 01/03/2015
+[2019-07-16T15:03:31.158] [INFO] file - Parsing amount One Cheeseburger to NaN
+[2019-07-16T15:03:31.158] [ERROR] file - Cannot parse amount
+[2019-07-16T15:03:31.159] [TRACE] file - Passing csv line 28
+[2019-07-16T15:03:31.159] [INFO] file - Parsing date 02/03/2015
+[2019-07-16T15:03:31.160] [INFO] file - Parsing amount 1.92 to 1.92
+[2019-07-16T15:03:31.160] [TRACE] file - Passing csv line 29
+[2019-07-16T15:03:31.161] [INFO] file - Parsing date 04/03/2015
+[2019-07-16T15:03:31.162] [INFO] file - Parsing amount 9.09 to 9.09
+[2019-07-16T15:03:31.162] [TRACE] file - Passing csv line 30
+[2019-07-16T15:03:31.163] [INFO] file - Parsing date 06/03/2015
+[2019-07-16T15:03:31.163] [INFO] file - Parsing amount 9.4 to 9.4
+[2019-07-16T15:03:31.164] [TRACE] file - Passing csv line 31
+[2019-07-16T15:03:31.165] [INFO] file - Parsing date 08/03/2015
+[2019-07-16T15:03:31.166] [INFO] file - Parsing amount 11.32 to 11.32
+[2019-07-16T15:03:31.166] [TRACE] file - Passing csv line 32
+[2019-07-16T15:03:31.167] [INFO] file - Parsing date 11/03/2015
+[2019-07-16T15:03:31.167] [INFO] file - Parsing amount 11.57 to 11.57
+[2019-07-16T15:03:31.168] [TRACE] file - Passing csv line 33
+[2019-07-16T15:03:31.168] [INFO] file - Parsing date 15/03/2015
+[2019-07-16T15:03:31.169] [INFO] file - Parsing amount 2.29 to 2.29
+[2019-07-16T15:03:31.170] [TRACE] file - Passing csv line 34
+[2019-07-16T15:03:31.170] [INFO] file - Parsing date 19/03/2015
+[2019-07-16T15:03:31.171] [INFO] file - Parsing amount 9.96 to 9.96
+[2019-07-16T15:03:31.171] [TRACE] file - Passing csv line 35
+[2019-07-16T15:03:31.172] [INFO] file - Parsing date 21/03/2015
+[2019-07-16T15:03:31.172] [INFO] file - Parsing amount 7.54 to 7.54
+[2019-07-16T15:03:31.173] [TRACE] file - Passing csv line 36
+[2019-07-16T15:03:31.173] [INFO] file - Parsing date 25/03/2015
+[2019-07-16T15:03:31.174] [INFO] file - Parsing amount 2.39 to 2.39
+[2019-07-16T15:03:31.175] [TRACE] file - Passing csv line 37
+[2019-07-16T15:03:31.175] [INFO] file - Parsing date 28/03/2015
+[2019-07-16T15:03:31.176] [INFO] file - Parsing amount 5.83 to 5.83
+[2019-07-16T15:03:31.176] [TRACE] file - Passing csv line 38
+[2019-07-16T15:03:31.177] [INFO] file - Parsing date 29/03/2015
+[2019-07-16T15:03:31.177] [INFO] file - Parsing amount 10.85 to 10.85
+[2019-07-16T15:03:31.178] [TRACE] file - Passing csv line 39
+[2019-07-16T15:03:31.179] [INFO] file - Parsing date 30/03/2015
+[2019-07-16T15:03:31.179] [INFO] file - Parsing amount 8.6 to 8.6
+[2019-07-16T15:03:31.180] [TRACE] file - Passing csv line 40
+[2019-07-16T15:03:31.181] [INFO] file - Parsing date 02/04/2015
+[2019-07-16T15:03:31.181] [INFO] file - Parsing amount 1.11 to 1.11
+[2019-07-16T15:03:31.182] [TRACE] file - Passing csv line 41
+[2019-07-16T15:03:31.182] [INFO] file - Parsing date 05/04/2015
+[2019-07-16T15:03:31.183] [INFO] file - Parsing amount 0.96 to 0.96
+[2019-07-16T15:03:31.183] [TRACE] file - Passing csv line 42
+[2019-07-16T15:03:31.184] [INFO] file - Parsing date 09/04/2015
+[2019-07-16T15:03:31.185] [INFO] file - Parsing amount 11.79 to 11.79
+[2019-07-16T15:03:31.185] [TRACE] file - Passing csv line 43
+[2019-07-16T15:03:31.186] [INFO] file - Parsing date 12/04/2015
+[2019-07-16T15:03:31.186] [INFO] file - Parsing amount 8.37 to 8.37
+[2019-07-16T15:03:31.187] [TRACE] file - Passing csv line 44
+[2019-07-16T15:03:31.187] [INFO] file - Parsing date 13/04/2015
+[2019-07-16T15:03:31.188] [INFO] file - Parsing amount 1.27 to 1.27
+[2019-07-16T15:03:31.188] [TRACE] file - Passing csv line 45
+[2019-07-16T15:03:31.189] [INFO] file - Parsing date 15/04/2015
+[2019-07-16T15:03:31.190] [INFO] file - Parsing amount 8.5 to 8.5
+[2019-07-16T15:03:31.190] [TRACE] file - Passing csv line 46
+[2019-07-16T15:03:31.191] [INFO] file - Parsing date 19/04/2015
+[2019-07-16T15:03:31.191] [INFO] file - Parsing amount 8.91 to 8.91
+[2019-07-16T15:03:31.192] [TRACE] file - Passing csv line 47
+[2019-07-16T15:03:31.193] [INFO] file - Parsing date 23/04/2015
+[2019-07-16T15:03:31.193] [INFO] file - Parsing amount 8.1 to 8.1
+[2019-07-16T15:03:31.194] [TRACE] file - Passing csv line 48
+[2019-07-16T15:03:31.195] [INFO] file - Parsing date 24/04/2015
+[2019-07-16T15:03:31.196] [INFO] file - Parsing amount 6.38 to 6.38
+[2019-07-16T15:03:31.197] [TRACE] file - Passing csv line 49
+[2019-07-16T15:03:31.198] [INFO] file - Parsing date 26/04/2015
+[2019-07-16T15:03:31.199] [INFO] file - Parsing amount 8.44 to 8.44
+[2019-07-16T15:03:31.199] [TRACE] file - Passing csv line 50
+[2019-07-16T15:03:31.200] [INFO] file - Parsing date 27/04/2015
+[2019-07-16T15:03:31.201] [INFO] file - Parsing amount 10.91 to 10.91
+[2019-07-16T15:03:31.201] [TRACE] file - Passing csv line 51
+[2019-07-16T15:03:31.202] [INFO] file - Parsing date Last Thursday
+[2019-07-16T15:03:31.203] [ERROR] file - Invalid date
+[2019-07-16T15:03:31.203] [INFO] file - Parsing amount 5.42 to 5.42
+[2019-07-16T15:03:31.204] [TRACE] file - Finding all users
+[2019-07-16T15:03:31.205] [TRACE] file - Getting quick summary for Laura B
+[2019-07-16T15:03:31.208] [TRACE] file - Getting quick summary for Sarah T
+[2019-07-16T15:03:31.209] [TRACE] file - Getting quick summary for Stephen S
+[2019-07-16T15:03:31.210] [TRACE] file - Getting quick summary for Gergana I
+[2019-07-16T15:03:31.211] [TRACE] file - Getting quick summary for Ben B
+[2019-07-16T15:03:31.212] [TRACE] file - Getting quick summary for Jon A
+[2019-07-16T15:03:31.213] [TRACE] file - Getting quick summary for Todd
+[2019-07-16T15:03:31.215] [TRACE] file - Getting quick summary for Rob S
+[2019-07-16T15:03:31.216] [TRACE] file - Getting quick summary for Chris W
+[2019-07-16T15:03:31.217] [TRACE] file - Getting quick summary for Tim L
+[2019-07-16T15:03:31.218] [TRACE] file - Getting quick summary for Sam N
+[2019-07-16T15:03:31.219] [TRACE] file - Getting quick summary for Dan W
+[2019-07-16T15:03:57.215] [TRACE] file - Passing csv line 1
+[2019-07-16T15:03:57.221] [INFO] file - Parsing date 01/01/2015
+[2019-07-16T15:03:57.226] [INFO] file - Parsing amount 10.54 to 10.54
+[2019-07-16T15:03:57.227] [INFO] file - Creating new user Laura B
+[2019-07-16T15:03:57.227] [INFO] file - Creating new user Sarah T
+[2019-07-16T15:03:57.228] [TRACE] file - Passing csv line 2
+[2019-07-16T15:03:57.229] [INFO] file - Parsing date 04/01/2015
+[2019-07-16T15:03:57.230] [INFO] file - Parsing amount 3.22 to 3.22
+[2019-07-16T15:03:57.231] [INFO] file - Creating new user Stephen S
+[2019-07-16T15:03:57.231] [INFO] file - Creating new user Gergana I
+[2019-07-16T15:03:57.232] [TRACE] file - Passing csv line 3
+[2019-07-16T15:03:57.232] [INFO] file - Parsing date 07/01/2015
+[2019-07-16T15:03:57.233] [INFO] file - Parsing amount 9.93 to 9.93
+[2019-07-16T15:03:57.234] [INFO] file - Creating new user Ben B
+[2019-07-16T15:03:57.234] [INFO] file - Creating new user Jon A
+[2019-07-16T15:03:57.235] [TRACE] file - Passing csv line 4
+[2019-07-16T15:03:57.235] [INFO] file - Parsing date 11/01/2015
+[2019-07-16T15:03:57.236] [INFO] file - Parsing amount 7.33 to 7.33
+[2019-07-16T15:03:57.237] [INFO] file - Creating new user Todd
+[2019-07-16T15:03:57.237] [TRACE] file - Passing csv line 5
+[2019-07-16T15:03:57.238] [INFO] file - Parsing date 12/01/2015
+[2019-07-16T15:03:57.238] [INFO] file - Parsing amount 8.94 to 8.94
+[2019-07-16T15:03:57.239] [TRACE] file - Passing csv line 6
+[2019-07-16T15:03:57.239] [INFO] file - Parsing date 15/01/2015
+[2019-07-16T15:03:57.240] [INFO] file - Parsing amount 10.19 to 10.19
+[2019-07-16T15:03:57.240] [INFO] file - Creating new user Rob S
+[2019-07-16T15:03:57.241] [TRACE] file - Passing csv line 7
+[2019-07-16T15:03:57.241] [INFO] file - Parsing date 16/01/2015
+[2019-07-16T15:03:57.242] [INFO] file - Parsing amount 0.69 to 0.69
+[2019-07-16T15:03:57.243] [TRACE] file - Passing csv line 8
+[2019-07-16T15:03:57.243] [INFO] file - Parsing date 18/01/2015
+[2019-07-16T15:03:57.244] [INFO] file - Parsing amount 10.73 to 10.73
+[2019-07-16T15:03:57.244] [TRACE] file - Passing csv line 9
+[2019-07-16T15:03:57.245] [INFO] file - Parsing date 22/01/2015
+[2019-07-16T15:03:57.246] [INFO] file - Parsing amount 0.8 to 0.8
+[2019-07-16T15:03:57.246] [TRACE] file - Passing csv line 10
+[2019-07-16T15:03:57.247] [INFO] file - Parsing date 24/01/2015
+[2019-07-16T15:03:57.248] [INFO] file - Parsing amount 8.49 to 8.49
+[2019-07-16T15:03:57.249] [INFO] file - Creating new user Chris W
+[2019-07-16T15:03:57.249] [TRACE] file - Passing csv line 11
+[2019-07-16T15:03:57.250] [INFO] file - Parsing date 27/01/2015
+[2019-07-16T15:03:57.251] [INFO] file - Parsing amount 0.52 to 0.52
+[2019-07-16T15:03:57.251] [INFO] file - Creating new user Tim L
+[2019-07-16T15:03:57.252] [TRACE] file - Passing csv line 12
+[2019-07-16T15:03:57.252] [INFO] file - Parsing date 29/01/2015
+[2019-07-16T15:03:57.253] [INFO] file - Parsing amount 9.01 to 9.01
+[2019-07-16T15:03:57.254] [INFO] file - Creating new user Sam N
+[2019-07-16T15:03:57.254] [TRACE] file - Passing csv line 13
+[2019-07-16T15:03:57.255] [INFO] file - Parsing date 01/02/2015
+[2019-07-16T15:03:57.255] [INFO] file - Parsing amount 7.53 to 7.53
+[2019-07-16T15:03:57.256] [TRACE] file - Passing csv line 14
+[2019-07-16T15:03:57.256] [INFO] file - Parsing date 02/02/2015
+[2019-07-16T15:03:57.257] [INFO] file - Parsing amount 7.43 to 7.43
+[2019-07-16T15:03:57.258] [TRACE] file - Passing csv line 15
+[2019-07-16T15:03:57.258] [INFO] file - Parsing date 04/02/2015
+[2019-07-16T15:03:57.259] [INFO] file - Parsing amount 5.78 to 5.78
+[2019-07-16T15:03:57.259] [TRACE] file - Passing csv line 16
+[2019-07-16T15:03:57.260] [INFO] file - Parsing date 06/02/2015
+[2019-07-16T15:03:57.260] [INFO] file - Parsing amount 10.29 to 10.29
+[2019-07-16T15:03:57.261] [INFO] file - Creating new user Dan W
+[2019-07-16T15:03:57.262] [TRACE] file - Passing csv line 17
+[2019-07-16T15:03:57.262] [INFO] file - Parsing date 07/02/2015
+[2019-07-16T15:03:57.263] [INFO] file - Parsing amount 7.37 to 7.37
+[2019-07-16T15:03:57.264] [TRACE] file - Passing csv line 18
+[2019-07-16T15:03:57.265] [INFO] file - Parsing date 10/02/2015
+[2019-07-16T15:03:57.265] [INFO] file - Parsing amount 9.84 to 9.84
+[2019-07-16T15:03:57.266] [TRACE] file - Passing csv line 19
+[2019-07-16T15:03:57.267] [INFO] file - Parsing date 11/02/2015
+[2019-07-16T15:03:57.267] [INFO] file - Parsing amount 0.68 to 0.68
+[2019-07-16T15:03:57.268] [TRACE] file - Passing csv line 20
+[2019-07-16T15:03:57.268] [INFO] file - Parsing date 13/02/2015
+[2019-07-16T15:03:57.269] [INFO] file - Parsing amount 6.56 to 6.56
+[2019-07-16T15:03:57.270] [TRACE] file - Passing csv line 21
+[2019-07-16T15:03:57.270] [INFO] file - Parsing date 16/02/2015
+[2019-07-16T15:03:57.271] [INFO] file - Parsing amount 1.28 to 1.28
+[2019-07-16T15:03:57.271] [TRACE] file - Passing csv line 22
+[2019-07-16T15:03:57.272] [INFO] file - Parsing date 17/02/2015
+[2019-07-16T15:03:57.272] [INFO] file - Parsing amount 11.48 to 11.48
+[2019-07-16T15:03:57.273] [TRACE] file - Passing csv line 23
+[2019-07-16T15:03:57.273] [INFO] file - Parsing date 18/02/2015
+[2019-07-16T15:03:57.274] [INFO] file - Parsing amount 4.83 to 4.83
+[2019-07-16T15:03:57.275] [TRACE] file - Passing csv line 24
+[2019-07-16T15:03:57.275] [INFO] file - Parsing date 21/02/2015
+[2019-07-16T15:03:57.276] [INFO] file - Parsing amount 0.5 to 0.5
+[2019-07-16T15:03:57.276] [TRACE] file - Passing csv line 25
+[2019-07-16T15:03:57.277] [INFO] file - Parsing date 24/02/2015
+[2019-07-16T15:03:57.278] [INFO] file - Parsing amount 9.08 to 9.08
+[2019-07-16T15:03:57.278] [TRACE] file - Passing csv line 26
+[2019-07-16T15:03:57.279] [INFO] file - Parsing date 26/02/2015
+[2019-07-16T15:03:57.279] [INFO] file - Parsing amount 4.23 to 4.23
+[2019-07-16T15:03:57.280] [TRACE] file - Passing csv line 27
+[2019-07-16T15:03:57.281] [INFO] file - Parsing date 01/03/2015
+[2019-07-16T15:03:57.281] [INFO] file - Parsing amount One Cheeseburger to NaN
+[2019-07-16T15:03:57.282] [ERROR] file - Cannot parse amount
+[2019-07-16T15:03:57.283] [TRACE] file - Passing csv line 28
+[2019-07-16T15:03:57.283] [INFO] file - Parsing date 02/03/2015
+[2019-07-16T15:03:57.284] [INFO] file - Parsing amount 1.92 to 1.92
+[2019-07-16T15:03:57.285] [TRACE] file - Passing csv line 29
+[2019-07-16T15:03:57.285] [INFO] file - Parsing date 04/03/2015
+[2019-07-16T15:03:57.286] [INFO] file - Parsing amount 9.09 to 9.09
+[2019-07-16T15:03:57.286] [TRACE] file - Passing csv line 30
+[2019-07-16T15:03:57.287] [INFO] file - Parsing date 06/03/2015
+[2019-07-16T15:03:57.287] [INFO] file - Parsing amount 9.4 to 9.4
+[2019-07-16T15:03:57.288] [TRACE] file - Passing csv line 31
+[2019-07-16T15:03:57.288] [INFO] file - Parsing date 08/03/2015
+[2019-07-16T15:03:57.289] [INFO] file - Parsing amount 11.32 to 11.32
+[2019-07-16T15:03:57.290] [TRACE] file - Passing csv line 32
+[2019-07-16T15:03:57.290] [INFO] file - Parsing date 11/03/2015
+[2019-07-16T15:03:57.291] [INFO] file - Parsing amount 11.57 to 11.57
+[2019-07-16T15:03:57.291] [TRACE] file - Passing csv line 33
+[2019-07-16T15:03:57.292] [INFO] file - Parsing date 15/03/2015
+[2019-07-16T15:03:57.292] [INFO] file - Parsing amount 2.29 to 2.29
+[2019-07-16T15:03:57.293] [TRACE] file - Passing csv line 34
+[2019-07-16T15:03:57.293] [INFO] file - Parsing date 19/03/2015
+[2019-07-16T15:03:57.294] [INFO] file - Parsing amount 9.96 to 9.96
+[2019-07-16T15:03:57.295] [TRACE] file - Passing csv line 35
+[2019-07-16T15:03:57.295] [INFO] file - Parsing date 21/03/2015
+[2019-07-16T15:03:57.296] [INFO] file - Parsing amount 7.54 to 7.54
+[2019-07-16T15:03:57.297] [TRACE] file - Passing csv line 36
+[2019-07-16T15:03:57.298] [INFO] file - Parsing date 25/03/2015
+[2019-07-16T15:03:57.298] [INFO] file - Parsing amount 2.39 to 2.39
+[2019-07-16T15:03:57.299] [TRACE] file - Passing csv line 37
+[2019-07-16T15:03:57.300] [INFO] file - Parsing date 28/03/2015
+[2019-07-16T15:03:57.300] [INFO] file - Parsing amount 5.83 to 5.83
+[2019-07-16T15:03:57.301] [TRACE] file - Passing csv line 38
+[2019-07-16T15:03:57.301] [INFO] file - Parsing date 29/03/2015
+[2019-07-16T15:03:57.302] [INFO] file - Parsing amount 10.85 to 10.85
+[2019-07-16T15:03:57.302] [TRACE] file - Passing csv line 39
+[2019-07-16T15:03:57.303] [INFO] file - Parsing date 30/03/2015
+[2019-07-16T15:03:57.303] [INFO] file - Parsing amount 8.6 to 8.6
+[2019-07-16T15:03:57.304] [TRACE] file - Passing csv line 40
+[2019-07-16T15:03:57.305] [INFO] file - Parsing date 02/04/2015
+[2019-07-16T15:03:57.305] [INFO] file - Parsing amount 1.11 to 1.11
+[2019-07-16T15:03:57.306] [TRACE] file - Passing csv line 41
+[2019-07-16T15:03:57.306] [INFO] file - Parsing date 05/04/2015
+[2019-07-16T15:03:57.307] [INFO] file - Parsing amount 0.96 to 0.96
+[2019-07-16T15:03:57.307] [TRACE] file - Passing csv line 42
+[2019-07-16T15:03:57.308] [INFO] file - Parsing date 09/04/2015
+[2019-07-16T15:03:57.308] [INFO] file - Parsing amount 11.79 to 11.79
+[2019-07-16T15:03:57.309] [TRACE] file - Passing csv line 43
+[2019-07-16T15:03:57.309] [INFO] file - Parsing date 12/04/2015
+[2019-07-16T15:03:57.310] [INFO] file - Parsing amount 8.37 to 8.37
+[2019-07-16T15:03:57.311] [TRACE] file - Passing csv line 44
+[2019-07-16T15:03:57.311] [INFO] file - Parsing date 13/04/2015
+[2019-07-16T15:03:57.312] [INFO] file - Parsing amount 1.27 to 1.27
+[2019-07-16T15:03:57.313] [TRACE] file - Passing csv line 45
+[2019-07-16T15:03:57.313] [INFO] file - Parsing date 15/04/2015
+[2019-07-16T15:03:57.314] [INFO] file - Parsing amount 8.5 to 8.5
+[2019-07-16T15:03:57.315] [TRACE] file - Passing csv line 46
+[2019-07-16T15:03:57.315] [INFO] file - Parsing date 19/04/2015
+[2019-07-16T15:03:57.316] [INFO] file - Parsing amount 8.91 to 8.91
+[2019-07-16T15:03:57.316] [TRACE] file - Passing csv line 47
+[2019-07-16T15:03:57.317] [INFO] file - Parsing date 23/04/2015
+[2019-07-16T15:03:57.317] [INFO] file - Parsing amount 8.1 to 8.1
+[2019-07-16T15:03:57.318] [TRACE] file - Passing csv line 48
+[2019-07-16T15:03:57.318] [INFO] file - Parsing date 24/04/2015
+[2019-07-16T15:03:57.319] [INFO] file - Parsing amount 6.38 to 6.38
+[2019-07-16T15:03:57.320] [TRACE] file - Passing csv line 49
+[2019-07-16T15:03:57.320] [INFO] file - Parsing date 26/04/2015
+[2019-07-16T15:03:57.321] [INFO] file - Parsing amount 8.44 to 8.44
+[2019-07-16T15:03:57.321] [TRACE] file - Passing csv line 50
+[2019-07-16T15:03:57.322] [INFO] file - Parsing date 27/04/2015
+[2019-07-16T15:03:57.322] [INFO] file - Parsing amount 10.91 to 10.91
+[2019-07-16T15:03:57.323] [TRACE] file - Passing csv line 51
+[2019-07-16T15:03:57.323] [INFO] file - Parsing date Last Thursday
+[2019-07-16T15:03:57.324] [ERROR] file - Invalid date
+[2019-07-16T15:03:57.325] [INFO] file - Parsing amount 5.42 to 5.42
+[2019-07-16T15:03:57.325] [TRACE] file - Finding all users
+[2019-07-16T15:03:57.326] [TRACE] file - Getting quick summary for Laura B
+[2019-07-16T15:03:57.330] [TRACE] file - Getting quick summary for Sarah T
+[2019-07-16T15:03:57.336] [TRACE] file - Getting quick summary for Stephen S
+[2019-07-16T15:03:57.338] [TRACE] file - Getting quick summary for Gergana I
+[2019-07-16T15:03:57.339] [TRACE] file - Getting quick summary for Ben B
+[2019-07-16T15:03:57.340] [TRACE] file - Getting quick summary for Jon A
+[2019-07-16T15:03:57.341] [TRACE] file - Getting quick summary for Todd
+[2019-07-16T15:03:57.342] [TRACE] file - Getting quick summary for Rob S
+[2019-07-16T15:03:57.343] [TRACE] file - Getting quick summary for Chris W
+[2019-07-16T15:03:57.348] [TRACE] file - Getting quick summary for Tim L
+[2019-07-16T15:03:57.350] [TRACE] file - Getting quick summary for Sam N
+[2019-07-16T15:03:57.352] [TRACE] file - Getting quick summary for Dan W
