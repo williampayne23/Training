@@ -2,9 +2,8 @@ const log4js = require('log4js')
 const readlineSync = require("readline-sync")
 
 const User = require("./user");
-const csv = require("./csvParser");
+const parser = require("./parser");
 
-const invalidTransactions = [];
 
 
 log4js.configure({
@@ -24,14 +23,9 @@ log4js.configure({
 
 const logger = log4js.getLogger('file');
 
-main()
+menu();
 
-async function main() {
-    await csv('Transactions2014.csv')
-    menu();
-}
-
-function menu() {
+async function menu() {
     while (true) {
         let input = readlineSync.question("Give a command: ");
         console.log(input)
@@ -44,17 +38,26 @@ function menu() {
             userInfo(username);
         } else if (input === "Stop") {
             break;
+        } else if (input.substring(0, 13) === "Import File [") {
+            let name = input.substring(13, input.length - 1);
+            logger.trace("Importing file " + name)
+            let extention = name.substring(name.lastIndexOf('.'))
+            if (extention == '.csv') {
+                logger.info("Importing csv file");
+                await parser.csv(name);
+            } else if (extention == '.json') {
+                logger.info("Importing json file");
+                await parser.json(name);
+            } else if (extention == '.xml') {
+                logger.info("Importing xml file");
+                await parser.xml(name);
+            } else {
+                logger.error("Invalid file type" + extension);
+                console.log("This is an invalid file type: " + extention);
+            }
         } else {
             console.log(input + " is not a command");
         }
-    }
-
-    if (invalidTransactions.length > 0) {
-        console.log("Finished program with the invalid lines ")
-        invalidTransactions.forEach(t => {
-            console.log(t);
-        })
-        console.log("These lines were ommited");
     }
 }
 
