@@ -1,7 +1,7 @@
 const readlineSync = require('readline-sync');
 const csv = require('csv-streamify');
 const fs = require('fs');
-
+const moment = require('moment')
 const users = [];
 
 const parser = csv({ objectMode : true }, (err, result) => {
@@ -11,10 +11,25 @@ const parser = csv({ objectMode : true }, (err, result) => {
     }
     result.shift();
     result.forEach(parseCsvLine);
-    users.forEach(u => {
-        console.log(u.getQuickSummary())
-    });
+    if(process.argv[2] === "All"){
+        findAll();
+    }else if(process.argv[2] === undefined){
+        console.log("Give a username as an argument or \"All\"");
+    }else {
+        let u = User.get(process.argv[2])
+        if(u === undefined){
+            console.log("No such user");
+        }else{
+            u.getCompleteSummary();
+        }
+    }
 })
+
+function findAll(){
+    users.forEach(u => {
+        u.getQuickSummary();
+    });
+}
 
 function parseCsvLine(line){
     transaction = Transaction.createTransactionFromLine(line);
@@ -29,11 +44,11 @@ fs.createReadStream('./Transactions2014.csv').pipe(parser);
 
 class Transaction {
     constructor(date, to, from, reason, amount){
-        this.date = date;
+        this.date = moment(date, "DD/MM/YYYY");
         this.to = to;
         this.from = from;
         this.reason = reason;
-        this.amount = amount;
+        this.amount = parseFloat(amount);
     }
 
     static createTransactionFromLine(line){
@@ -49,13 +64,35 @@ class User {
     }
 
     addToTransaction(transaction){
-        this.runningTotal = parseFloat(this.runningTotal) + parseFloat(transaction.amount);
+        this.runningTotal = this.runningTotal + transaction.amount;
         this.transactions.push(transaction);
     }
 
     addFromTransaction(transaction){
         this.runningTotal -= transaction.amount;
         this.transactions.push(transaction);
+    }
+
+    getQuickSummary(){
+        if(this.runningTotal > 0){
+            console.log(`${this.username} is owed £${this.runningTotal.toFixed(2)}`);
+        }else if(this.runningTotal < 0){
+            console.log(`${this.username} owes £${-this.runningTotal.toFixed(2)}`);
+        }else{
+            console.log(`${this.username} is completely even`);
+        }
+    }
+
+    getCompleteSummary(){
+        this.transactions.sort((a, b) => a.date - b.date);
+        console.log(this.username + " transaction summary");
+        this.transactions.forEach((t) => {
+            if(t.to === this.username){
+                console.log(`On ${t.date.format("MMMM Do YYYY")} ${t.from} lent ${t.amount} for ${t.reason}`) 
+            }else{
+                console.log(`On ${t.date.format("MMMM Do YYYY")} ${t.to} borrowed ${t.amount} for ${t.reason}`);
+            }
+        })
     }
 
     static getOrMake(name){
@@ -67,17 +104,7 @@ class User {
         return result;
     }
 
-    getQuickSummary(){
-        if(this.runningTotal > 0){
-            return this.username + " is owed £" + this.runningTotal.toFixed(2);
-        }else if(this.runningTotal < 0){
-            return this.username + " owes £" + (-this.runningTotal).toFixed(2);
-        }else{
-            return this.username + "is completely even";
-        }
-    }
-
-    getCompleteSummary(){
-        
+    static get(name){
+        return users.find((user) => user.username === name);
     }
 }
