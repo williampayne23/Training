@@ -1,8 +1,9 @@
-const log4js = require('log4js')
-const readlineSync = require("readline-sync")
+const log4js = require('log4js');
+const readlineSync = require("readline-sync");
 
 const User = require("./user");
 const parser = require("./parser");
+const exporter = require("./exporter");
 
 
 
@@ -55,6 +56,15 @@ async function menu() {
                 logger.error("Invalid file type" + extension);
                 console.log("This is an invalid file type: " + extention);
             }
+        } else if (input.substring(0, 13) == "Export File [") {
+            let name = input.substring(13, input.length - 1);
+            logger.trace("Exporting file " + name)
+            let extention = name.substring(name.lastIndexOf('.'))
+            if (extention === ".csv") {
+                logger.info("Exporting to CSV");
+                exporter.csv(name)
+            }
+
         } else {
             console.log(input + " is not a command");
         }

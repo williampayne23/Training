@@ -34,4 +34,8 @@ module.exports = class Transaction {
         transactions.push(transaction)
         return transaction;
     }
+
+    static forEach(fxn) {
+        transactions.forEach(fxn);
+    }
 }
