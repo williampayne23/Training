@@ -1,24 +1,27 @@
+fs = require('fs');
+xml = require("xml");
+moment = require("moment");
+
 Bank = require('./bank');
-fs = require('fs')
 
 module.exports = function (file) {
     let extention = file.substring(file.lastIndexOf("."));
     switch (extention) {
         case ".csv":
-            csv(file);
+            toCSV(file);
             break;
         case ".json":
-            json(file);
+            toJSON(file);
             break;
         case ".xml":
-            xml(file);
+            toXML(file);
             break;
         default:
             break;
     }
 }
 
-function csv(file) {
+function toCSV(file) {
     let transactionLineArray = ["Date, From, To, Narrative, Amount"];
     Bank.transactions.forEach((t) => {
         transactionLineArray.push(`${t.date.format("DD/MM/YYYY")},${t.from},${t.to},${t.reason},${t.amount}`)
@@ -26,8 +29,8 @@ function csv(file) {
     fs.writeFileSync(file, transactionLineArray.join("\n"));
 }
 
-function json(file) {
-    jsonFormattedTransactions = [];
+function toJSON(file) {
+    let jsonFormattedTransactions = [];
     Bank.transactions.forEach((t) => {
         formattedTransaction = {
             Date: t.date.format(),
@@ -38,10 +41,38 @@ function json(file) {
         }
         jsonFormattedTransactions.push(formattedTransaction);
     })
-    outputString = JSON.stringify(jsonFormattedTransactions, null, 4);
+    let outputString = JSON.stringify(jsonFormattedTransactions, null, 4);
     fs.writeFileSync(file, outputString);
 }
 
-function xml(file) {
-    //TODO Xml output
+function toXML(file) {
+    let xmlFormattedTransactions = {
+        TransactionList: []
+    }
+
+    Bank.transactions.forEach(t => {
+        xmlFormattedTransaction = {
+            SupportTransaction: [{
+                _attr: {
+                    Date: t.date.diff(moment("31/12/1899", "DD/MM/YYYY"), "days")
+                }
+            }, {
+                Description: t.reason
+            }, {
+                Value: t.amount
+            }, {
+                Parties: [{
+                        From: t.from
+                    },
+                    {
+                        To: t.to
+                    }
+                ]
+            }]
+        }
+        xmlFormattedTransactions.TransactionList.push(xmlFormattedTransaction);
+    })
+
+    let outputString = '<?xml version="1.0" encoding="utf-8"?>\n' + xml(xmlFormattedTransactions, true);
+    fs.writeFileSync(file, outputString);
 }
