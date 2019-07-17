@@ -23,21 +23,30 @@ function checkInvalids() {
 module.exports = async function (file) {
     lineNum = 0;
     logger.trace("Importing file " + file)
-    let extention = file.substring(file.lastIndexOf('.'))
-    if (extention == '.csv') {
-        logger.info("Importing csv file");
-        return await parseCSV(file);
-    } else if (extention == '.json') {
-        logger.info("Importing json file");
-        return await parseJSON(file);
-    } else if (extention == '.xml') {
-        logger.info("Importing xml file");
-        return await parseXML(file);
-    } else {
-        logger.error("Invalid file type" + extension);
-        console.log("This is an invalid file type: " + extention);
+    if (!fs.existsSync(file)) {
+        logger.warn("Invalid file given");
+        console.log("No such file")
+        return null;
     }
-    checkInvalids();
+    let extention = file.substring(file.lastIndexOf('.'))
+    if (extention === '.csv') {
+        logger.info("Importing csv file");
+        checkInvalids();
+        return await parseCSV(file);
+    }
+    if (extention === '.json') {
+        logger.info("Importing json file");
+        checkInvalids();
+        return await parseJSON(file);
+    }
+    if (extention === '.xml') {
+        logger.info("Importing xml file");
+        checkInvalids();
+        return await parseXML(file);
+    }
+
+    logger.error("Invalid file type" + extension);
+    console.log("This is an invalid file type: " + extention);
 }
 
 function parseCSV(filename) {
@@ -49,13 +58,14 @@ function parseCSV(filename) {
                 console.error(err);
                 logger.error(err)
                 reject(err);
+            } else {
+                result.shift();
+                result.forEach(line => {
+                    line[0] = moment(line[0], "DD/MM/YYYY");
+                    parseLine(line);
+                });
+                resolve();
             }
-            result.shift();
-            result.forEach(line => {
-                line[0] = moment(line[0], "DD/MM/YYYY");
-                parseLine(line);
-            });
-            resolve();
         })
 
         fs.createReadStream(filename).pipe(parser);
@@ -102,18 +112,22 @@ function parseLine(line) {
 }
 
 function validateLine(line) {
-    let parsedAmount = parseFloat(line[4]);
     if (line.length !== 5) {
         logger.error("Line has " + line.length + " elements insead of 5");
         invalidTransactions.push([lineNum, line]);
         return null;
-    } else if (!parsedAmount && parsedAmount !== 0) {
-        invalidTransactions.push([lineNum, line]);
-        return null;
-    } else if (!line[0].isValid()) {
-        invalidTransactions.push([lineNum, line]);
-        return null;
-    } else {
-        return line;
     }
+
+    line[4] = parseFloat(line[4]);
+    if (!line[4] && line[4] !== 0) {
+        invalidTransactions.push([lineNum, line]);
+        return null;
+    }
+
+    if (!line[0].isValid()) {
+        invalidTransactions.push([lineNum, line]);
+        return null;
+    }
+
+    return line;
 }

@@ -15,7 +15,7 @@ module.exports = {
         from.addFromTransaction(transaction);
     },
     addTransactionFromLine(line) {
-        let transaction = new Transaction(line[0], line[1], line[2], line[3], parsedAmount);
+        let transaction = new Transaction(line[0], line[1], line[2], line[3], line[4]);
         this.addTransaction(transaction);
         return transaction;
     },
@@ -39,13 +39,13 @@ module.exports = {
             console.log("No such user");
         } else {
             logger.trace("Valid user, getting complete summary")
-            u.getCompleteSummary();
+            console.log(u.getCompleteSummary().join("\n"));
         }
     },
     printAllUserSummary() {
         this.users.forEach(u => {
             logger.trace("Getting quick summary for " + u.username)
-            u.getQuickSummary();
+            console.log(u.toString());
         });
     }
 }

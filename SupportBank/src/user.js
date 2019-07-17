@@ -15,25 +15,27 @@ module.exports = class User {
         this.transactions.push(transaction);
     }
 
-    getQuickSummary() {
+    toString() {
         if (this.runningTotal > 0) {
-            console.log(`${this.username} is owed £${this.runningTotal.toFixed(2)}`);
-        } else if (this.runningTotal < 0) {
-            console.log(`${this.username} owes £${-this.runningTotal.toFixed(2)}`);
-        } else {
-            console.log(`${this.username} is completely even`);
+            return `${this.username} is owed £${this.runningTotal.toFixed(2)}`;
         }
+        if (this.runningTotal < 0) {
+            return `${this.username} owes £${-this.runningTotal.toFixed(2)}`;
+        }
+
+        return `${this.username} is completely even`;
     }
 
     getCompleteSummary() {
+        let summary = [];
         this.transactions.sort((a, b) => a.date - b.date);
-        console.log(this.username + " transaction summary");
         this.transactions.forEach((t) => {
             if (t.to === this.username) {
-                console.log(`On ${t.date.format("MMMM Do YYYY")} ${t.from} lent ${t.amount} for ${t.reason}`)
+                summary.push(`On ${t.date.format("MMMM Do YYYY")} ${t.from} lent ${t.amount} for ${t.reason}`);
             } else {
-                console.log(`On ${t.date.format("MMMM Do YYYY")} ${t.to} borrowed ${t.amount} for ${t.reason}`);
+                summary.push(`On ${t.date.format("MMMM Do YYYY")} ${t.to} borrowed ${t.amount} for ${t.reason}`);
             }
         })
+        return summary;
     }
 }

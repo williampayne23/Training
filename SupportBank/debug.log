@@ -2699,3 +2699,430 @@
 [2019-07-17T11:26:45.668] [TRACE] file - Parsing csv line 49
 [2019-07-17T11:26:45.669] [TRACE] file - Parsing csv line 50
 [2019-07-17T11:26:45.670] [TRACE] file - Parsing csv line 51
+[2019-07-17T11:51:25.124] [TRACE] file - Importing file Data/Transactions2014.csv
+[2019-07-17T11:51:25.131] [INFO] file - Importing csv file
+[2019-07-17T11:51:25.153] [TRACE] file - Parsing csv line 1
+[2019-07-17T11:51:25.165] [ERROR] file - ReferenceError: parsedAmount is not defined
+    at Object.addTransactionFromLine (C:\Work\Training\SupportBank\src\bank.js:18:79)
+    at parseLine (C:\Work\Training\SupportBank\src\parser.js:100:14)
+    at result.forEach.line (C:\Work\Training\SupportBank\src\parser.js:56:17)
+    at Array.forEach (<anonymous>)
+    at Object.csv [as cb] (C:\Work\Training\SupportBank\src\parser.js:54:20)
+    at DestroyableTransform.flush [as _flush] (C:\Work\Training\SupportBank\node_modules\csv-streamify\csv-streamify.js:174:25)
+    at DestroyableTransform.prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_transform.js:138:10)
+    at DestroyableTransform.emit (events.js:198:13)
+    at prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:619:14)
+    at finishMaybe (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:627:5)
+[2019-07-17T11:54:19.246] [TRACE] file - Importing file Data/Transactions2014.csv
+[2019-07-17T11:54:19.252] [INFO] file - Importing csv file
+[2019-07-17T11:54:19.274] [TRACE] file - Parsing csv line 1
+[2019-07-17T11:54:19.286] [ERROR] file - ReferenceError: parsedAmount is not defined
+    at Object.addTransactionFromLine (C:\Work\Training\SupportBank\src\bank.js:18:79)
+    at parseLine (C:\Work\Training\SupportBank\src\parser.js:108:14)
+    at result.forEach.line (C:\Work\Training\SupportBank\src\parser.js:64:17)
+    at Array.forEach (<anonymous>)
+    at Object.csv [as cb] (C:\Work\Training\SupportBank\src\parser.js:62:20)
+    at DestroyableTransform.flush [as _flush] (C:\Work\Training\SupportBank\node_modules\csv-streamify\csv-streamify.js:174:25)
+    at DestroyableTransform.prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_transform.js:138:10)
+    at DestroyableTransform.emit (events.js:198:13)
+    at prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:619:14)
+    at finishMaybe (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:627:5)
+[2019-07-17T11:54:56.896] [TRACE] file - Importing file Data/Transactions2013.json
+[2019-07-17T11:54:56.902] [INFO] file - Importing json file
+[2019-07-17T11:54:56.910] [TRACE] file - Parsing csv line 1
+[2019-07-17T11:55:29.543] [TRACE] file - Importing file DodgyTransactions2015.csv
+[2019-07-17T11:55:29.549] [INFO] file - Importing csv file
+[2019-07-17T11:55:29.567] [TRACE] file - Parsing csv line 1
+[2019-07-17T11:55:29.579] [ERROR] file - ReferenceError: parsedAmount is not defined
+    at Object.addTransactionFromLine (C:\Work\Training\SupportBank\src\bank.js:18:79)
+    at parseLine (C:\Work\Training\SupportBank\src\parser.js:109:14)
+    at result.forEach.line (C:\Work\Training\SupportBank\src\parser.js:65:17)
+    at Array.forEach (<anonymous>)
+    at Object.csv [as cb] (C:\Work\Training\SupportBank\src\parser.js:63:20)
+    at DestroyableTransform.flush [as _flush] (C:\Work\Training\SupportBank\node_modules\csv-streamify\csv-streamify.js:174:25)
+    at DestroyableTransform.prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_transform.js:138:10)
+    at DestroyableTransform.emit (events.js:198:13)
+    at prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:619:14)
+    at finishMaybe (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:627:5)
+[2019-07-17T11:56:17.120] [TRACE] file - Importing file DodgyTransactions2015.csv
+[2019-07-17T11:56:17.125] [INFO] file - Importing csv file
+[2019-07-17T11:56:17.144] [TRACE] file - Parsing csv line 1
+[2019-07-17T11:56:17.155] [ERROR] file - ReferenceError: parsedAmount is not defined
+    at Object.addTransactionFromLine (C:\Work\Training\SupportBank\src\bank.js:18:79)
+    at parseLine (C:\Work\Training\SupportBank\src\parser.js:112:14)
+    at result.forEach.line (C:\Work\Training\SupportBank\src\parser.js:68:17)
+    at Array.forEach (<anonymous>)
+    at Object.csv [as cb] (C:\Work\Training\SupportBank\src\parser.js:66:20)
+    at DestroyableTransform.flush [as _flush] (C:\Work\Training\SupportBank\node_modules\csv-streamify\csv-streamify.js:174:25)
+    at DestroyableTransform.prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_transform.js:138:10)
+    at DestroyableTransform.emit (events.js:198:13)
+    at prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:619:14)
+    at finishMaybe (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:627:5)
+[2019-07-17T11:57:08.920] [TRACE] file - Importing file DodgyTransactions2015.csv
+[2019-07-17T11:57:08.929] [INFO] file - Importing csv file
+[2019-07-17T11:57:08.948] [TRACE] file - Parsing csv line 1
+[2019-07-17T11:57:08.962] [ERROR] file - ReferenceError: parsedAmount is not defined
+    at Object.addTransactionFromLine (C:\Work\Training\SupportBank\src\bank.js:18:79)
+    at parseLine (C:\Work\Training\SupportBank\src\parser.js:113:14)
+    at result.forEach.line (C:\Work\Training\SupportBank\src\parser.js:69:17)
+    at Array.forEach (<anonymous>)
+    at Object.csv [as cb] (C:\Work\Training\SupportBank\src\parser.js:67:20)
+    at DestroyableTransform.flush [as _flush] (C:\Work\Training\SupportBank\node_modules\csv-streamify\csv-streamify.js:174:25)
+    at DestroyableTransform.prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_transform.js:138:10)
+    at DestroyableTransform.emit (events.js:198:13)
+    at prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:619:14)
+    at finishMaybe (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:627:5)
+[2019-07-17T11:57:36.063] [TRACE] file - Importing file DodgyTransactions2015.csv
+[2019-07-17T11:57:36.069] [INFO] file - Importing csv file
+[2019-07-17T11:57:36.087] [TRACE] file - Parsing csv line 1
+[2019-07-17T11:57:36.099] [ERROR] file - ReferenceError: parsedAmount is not defined
+    at Object.addTransactionFromLine (C:\Work\Training\SupportBank\src\bank.js:18:79)
+    at parseLine (C:\Work\Training\SupportBank\src\parser.js:110:14)
+    at result.forEach.line (C:\Work\Training\SupportBank\src\parser.js:65:21)
+    at Array.forEach (<anonymous>)
+    at Object.csv [as cb] (C:\Work\Training\SupportBank\src\parser.js:63:24)
+    at DestroyableTransform.flush [as _flush] (C:\Work\Training\SupportBank\node_modules\csv-streamify\csv-streamify.js:174:25)
+    at DestroyableTransform.prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_transform.js:138:10)
+    at DestroyableTransform.emit (events.js:198:13)
+    at prefinish (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:619:14)
+    at finishMaybe (C:\Work\Training\SupportBank\node_modules\readable-stream\lib\_stream_writable.js:627:5)
+[2019-07-17T11:58:08.408] [TRACE] file - Importing file DodgyTransactions2015.csv
+[2019-07-17T11:58:08.413] [INFO] file - Importing csv file
+[2019-07-17T11:58:08.432] [TRACE] file - Parsing csv line 1
+[2019-07-17T11:58:08.433] [INFO] file - Creating new user Sarah T
+[2019-07-17T11:58:08.434] [INFO] file - Creating new user Laura B
+[2019-07-17T11:58:08.435] [TRACE] file - Parsing csv line 2
+[2019-07-17T11:58:08.436] [INFO] file - Creating new user Gergana I
+[2019-07-17T11:58:08.437] [INFO] file - Creating new user Stephen S
+[2019-07-17T11:58:08.437] [TRACE] file - Parsing csv line 3
+[2019-07-17T11:58:08.438] [INFO] file - Creating new user Jon A
+[2019-07-17T11:58:08.439] [INFO] file - Creating new user Ben B
+[2019-07-17T11:58:08.439] [TRACE] file - Parsing csv line 4
+[2019-07-17T11:58:08.440] [INFO] file - Creating new user Todd
+[2019-07-17T11:58:08.441] [TRACE] file - Parsing csv line 5
+[2019-07-17T11:58:08.441] [TRACE] file - Parsing csv line 6
+[2019-07-17T11:58:08.442] [INFO] file - Creating new user Rob S
+[2019-07-17T11:58:08.443] [TRACE] file - Parsing csv line 7
+[2019-07-17T11:58:08.443] [TRACE] file - Parsing csv line 8
+[2019-07-17T11:58:08.444] [TRACE] file - Parsing csv line 9
+[2019-07-17T11:58:08.445] [TRACE] file - Parsing csv line 10
+[2019-07-17T11:58:08.445] [INFO] file - Creating new user Chris W
+[2019-07-17T11:58:08.446] [TRACE] file - Parsing csv line 11
+[2019-07-17T11:58:08.447] [INFO] file - Creating new user Tim L
+[2019-07-17T11:58:08.447] [TRACE] file - Parsing csv line 12
+[2019-07-17T11:58:08.448] [INFO] file - Creating new user Sam N
+[2019-07-17T11:58:08.449] [TRACE] file - Parsing csv line 13
+[2019-07-17T11:58:08.450] [TRACE] file - Parsing csv line 14
+[2019-07-17T11:58:08.451] [TRACE] file - Parsing csv line 15
+[2019-07-17T11:58:08.452] [TRACE] file - Parsing csv line 16
+[2019-07-17T11:58:08.453] [INFO] file - Creating new user Dan W
+[2019-07-17T11:58:08.453] [TRACE] file - Parsing csv line 17
+[2019-07-17T11:58:08.454] [TRACE] file - Parsing csv line 18
+[2019-07-17T11:58:08.455] [TRACE] file - Parsing csv line 19
+[2019-07-17T11:58:08.455] [TRACE] file - Parsing csv line 20
+[2019-07-17T11:58:08.456] [TRACE] file - Parsing csv line 21
+[2019-07-17T11:58:08.457] [TRACE] file - Parsing csv line 22
+[2019-07-17T11:58:08.457] [TRACE] file - Parsing csv line 23
+[2019-07-17T11:58:08.458] [TRACE] file - Parsing csv line 24
+[2019-07-17T11:58:08.459] [TRACE] file - Parsing csv line 25
+[2019-07-17T11:58:08.459] [TRACE] file - Parsing csv line 26
+[2019-07-17T11:58:08.460] [TRACE] file - Parsing csv line 27
+[2019-07-17T11:58:08.461] [TRACE] file - Parsing csv line 28
+[2019-07-17T11:58:08.462] [TRACE] file - Parsing csv line 29
+[2019-07-17T11:58:08.462] [TRACE] file - Parsing csv line 30
+[2019-07-17T11:58:08.463] [TRACE] file - Parsing csv line 31
+[2019-07-17T11:58:08.463] [TRACE] file - Parsing csv line 32
+[2019-07-17T11:58:08.464] [TRACE] file - Parsing csv line 33
+[2019-07-17T11:58:08.465] [TRACE] file - Parsing csv line 34
+[2019-07-17T11:58:08.465] [TRACE] file - Parsing csv line 35
+[2019-07-17T11:58:08.466] [TRACE] file - Parsing csv line 36
+[2019-07-17T11:58:08.467] [TRACE] file - Parsing csv line 37
+[2019-07-17T11:58:08.469] [TRACE] file - Parsing csv line 38
+[2019-07-17T11:58:08.470] [TRACE] file - Parsing csv line 39
+[2019-07-17T11:58:08.470] [TRACE] file - Parsing csv line 40
+[2019-07-17T11:58:08.471] [TRACE] file - Parsing csv line 41
+[2019-07-17T11:58:08.472] [TRACE] file - Parsing csv line 42
+[2019-07-17T11:58:08.472] [TRACE] file - Parsing csv line 43
+[2019-07-17T11:58:08.473] [TRACE] file - Parsing csv line 44
+[2019-07-17T11:58:08.474] [TRACE] file - Parsing csv line 45
+[2019-07-17T11:58:08.474] [TRACE] file - Parsing csv line 46
+[2019-07-17T11:58:08.475] [TRACE] file - Parsing csv line 47
+[2019-07-17T11:58:08.476] [TRACE] file - Parsing csv line 48
+[2019-07-17T11:58:08.476] [TRACE] file - Parsing csv line 49
+[2019-07-17T11:58:08.477] [TRACE] file - Parsing csv line 50
+[2019-07-17T11:58:08.478] [TRACE] file - Parsing csv line 51
+[2019-07-17T11:58:12.854] [TRACE] file - Finding all users
+[2019-07-17T11:58:12.855] [TRACE] file - Getting quick summary for Sarah T
+[2019-07-17T11:58:12.877] [TRACE] file - Getting quick summary for Laura B
+[2019-07-17T11:58:12.892] [TRACE] file - Getting quick summary for Gergana I
+[2019-07-17T11:58:12.909] [TRACE] file - Getting quick summary for Stephen S
+[2019-07-17T11:58:12.925] [TRACE] file - Getting quick summary for Jon A
+[2019-07-17T11:58:12.940] [TRACE] file - Getting quick summary for Ben B
+[2019-07-17T11:58:12.955] [TRACE] file - Getting quick summary for Todd
+[2019-07-17T11:58:12.965] [TRACE] file - Getting quick summary for Rob S
+[2019-07-17T11:58:12.981] [TRACE] file - Getting quick summary for Chris W
+[2019-07-17T11:58:12.995] [TRACE] file - Getting quick summary for Tim L
+[2019-07-17T11:58:13.010] [TRACE] file - Getting quick summary for Sam N
+[2019-07-17T11:58:13.024] [TRACE] file - Getting quick summary for Dan W
+[2019-07-17T11:58:22.765] [TRACE] file - Finding all users
+[2019-07-17T11:58:22.766] [TRACE] file - Getting quick summary for Sarah T
+[2019-07-17T11:58:22.781] [TRACE] file - Getting quick summary for Laura B
+[2019-07-17T11:58:22.795] [TRACE] file - Getting quick summary for Gergana I
+[2019-07-17T11:58:22.808] [TRACE] file - Getting quick summary for Stephen S
+[2019-07-17T11:58:22.824] [TRACE] file - Getting quick summary for Jon A
+[2019-07-17T11:58:22.839] [TRACE] file - Getting quick summary for Ben B
+[2019-07-17T11:58:22.849] [TRACE] file - Getting quick summary for Todd
+[2019-07-17T11:58:22.863] [TRACE] file - Getting quick summary for Rob S
+[2019-07-17T11:58:22.877] [TRACE] file - Getting quick summary for Chris W
+[2019-07-17T11:58:22.891] [TRACE] file - Getting quick summary for Tim L
+[2019-07-17T11:58:22.905] [TRACE] file - Getting quick summary for Sam N
+[2019-07-17T11:58:22.914] [TRACE] file - Getting quick summary for Dan W
+[2019-07-17T11:58:46.465] [TRACE] file - Importing file DodgyTransactions2015.csv
+[2019-07-17T11:58:46.471] [INFO] file - Importing csv file
+[2019-07-17T11:58:46.489] [TRACE] file - Parsing csv line 1
+[2019-07-17T11:58:46.491] [INFO] file - Creating new user Sarah T
+[2019-07-17T11:58:46.491] [INFO] file - Creating new user Laura B
+[2019-07-17T11:58:46.493] [TRACE] file - Parsing csv line 2
+[2019-07-17T11:58:46.493] [INFO] file - Creating new user Gergana I
+[2019-07-17T11:58:46.494] [INFO] file - Creating new user Stephen S
+[2019-07-17T11:58:46.495] [TRACE] file - Parsing csv line 3
+[2019-07-17T11:58:46.495] [INFO] file - Creating new user Jon A
+[2019-07-17T11:58:46.496] [INFO] file - Creating new user Ben B
+[2019-07-17T11:58:46.496] [TRACE] file - Parsing csv line 4
+[2019-07-17T11:58:46.497] [INFO] file - Creating new user Todd
+[2019-07-17T11:58:46.498] [TRACE] file - Parsing csv line 5
+[2019-07-17T11:58:46.499] [TRACE] file - Parsing csv line 6
+[2019-07-17T11:58:46.499] [INFO] file - Creating new user Rob S
+[2019-07-17T11:58:46.500] [TRACE] file - Parsing csv line 7
+[2019-07-17T11:58:46.501] [TRACE] file - Parsing csv line 8
+[2019-07-17T11:58:46.502] [TRACE] file - Parsing csv line 9
+[2019-07-17T11:58:46.502] [TRACE] file - Parsing csv line 10
+[2019-07-17T11:58:46.503] [INFO] file - Creating new user Chris W
+[2019-07-17T11:58:46.504] [TRACE] file - Parsing csv line 11
+[2019-07-17T11:58:46.505] [INFO] file - Creating new user Tim L
+[2019-07-17T11:58:46.505] [TRACE] file - Parsing csv line 12
+[2019-07-17T11:58:46.506] [INFO] file - Creating new user Sam N
+[2019-07-17T11:58:46.507] [TRACE] file - Parsing csv line 13
+[2019-07-17T11:58:46.507] [TRACE] file - Parsing csv line 14
+[2019-07-17T11:58:46.508] [TRACE] file - Parsing csv line 15
+[2019-07-17T11:58:46.509] [TRACE] file - Parsing csv line 16
+[2019-07-17T11:58:46.509] [INFO] file - Creating new user Dan W
+[2019-07-17T11:58:46.510] [TRACE] file - Parsing csv line 17
+[2019-07-17T11:58:46.511] [TRACE] file - Parsing csv line 18
+[2019-07-17T11:58:46.511] [TRACE] file - Parsing csv line 19
+[2019-07-17T11:58:46.512] [TRACE] file - Parsing csv line 20
+[2019-07-17T11:58:46.513] [TRACE] file - Parsing csv line 21
+[2019-07-17T11:58:46.514] [TRACE] file - Parsing csv line 22
+[2019-07-17T11:58:46.514] [TRACE] file - Parsing csv line 23
+[2019-07-17T11:58:46.515] [TRACE] file - Parsing csv line 24
+[2019-07-17T11:58:46.516] [TRACE] file - Parsing csv line 25
+[2019-07-17T11:58:46.517] [TRACE] file - Parsing csv line 26
+[2019-07-17T11:58:46.517] [TRACE] file - Parsing csv line 27
+[2019-07-17T11:58:46.518] [TRACE] file - Parsing csv line 28
+[2019-07-17T11:58:46.519] [TRACE] file - Parsing csv line 29
+[2019-07-17T11:58:46.520] [TRACE] file - Parsing csv line 30
+[2019-07-17T11:58:46.521] [TRACE] file - Parsing csv line 31
+[2019-07-17T11:58:46.521] [TRACE] file - Parsing csv line 32
+[2019-07-17T11:58:46.522] [TRACE] file - Parsing csv line 33
+[2019-07-17T11:58:46.523] [TRACE] file - Parsing csv line 34
+[2019-07-17T11:58:46.524] [TRACE] file - Parsing csv line 35
+[2019-07-17T11:58:46.525] [TRACE] file - Parsing csv line 36
+[2019-07-17T11:58:46.525] [TRACE] file - Parsing csv line 37
+[2019-07-17T11:58:46.526] [TRACE] file - Parsing csv line 38
+[2019-07-17T11:58:46.527] [TRACE] file - Parsing csv line 39
+[2019-07-17T11:58:46.527] [TRACE] file - Parsing csv line 40
+[2019-07-17T11:58:46.528] [TRACE] file - Parsing csv line 41
+[2019-07-17T11:58:46.529] [TRACE] file - Parsing csv line 42
+[2019-07-17T11:58:46.530] [TRACE] file - Parsing csv line 43
+[2019-07-17T11:58:46.530] [TRACE] file - Parsing csv line 44
+[2019-07-17T11:58:46.531] [TRACE] file - Parsing csv line 45
+[2019-07-17T11:58:46.532] [TRACE] file - Parsing csv line 46
+[2019-07-17T11:58:46.532] [TRACE] file - Parsing csv line 47
+[2019-07-17T11:58:46.533] [TRACE] file - Parsing csv line 48
+[2019-07-17T11:58:46.534] [TRACE] file - Parsing csv line 49
+[2019-07-17T11:58:46.534] [TRACE] file - Parsing csv line 50
+[2019-07-17T11:58:46.535] [TRACE] file - Parsing csv line 51
+[2019-07-17T11:58:50.342] [TRACE] file - Finding all users
+[2019-07-17T11:58:50.343] [TRACE] file - Getting quick summary for Sarah T
+[2019-07-17T11:58:50.346] [TRACE] file - Getting quick summary for Laura B
+[2019-07-17T11:58:50.348] [TRACE] file - Getting quick summary for Gergana I
+[2019-07-17T11:58:50.350] [TRACE] file - Getting quick summary for Stephen S
+[2019-07-17T11:58:50.354] [TRACE] file - Getting quick summary for Jon A
+[2019-07-17T11:58:50.356] [TRACE] file - Getting quick summary for Ben B
+[2019-07-17T11:58:50.357] [TRACE] file - Getting quick summary for Todd
+[2019-07-17T11:58:50.358] [TRACE] file - Getting quick summary for Rob S
+[2019-07-17T11:58:50.359] [TRACE] file - Getting quick summary for Chris W
+[2019-07-17T11:58:50.360] [TRACE] file - Getting quick summary for Tim L
+[2019-07-17T11:58:50.361] [TRACE] file - Getting quick summary for Sam N
+[2019-07-17T11:58:50.362] [TRACE] file - Getting quick summary for Dan W
+[2019-07-17T11:58:55.718] [TRACE] file - Getting Dan W user info
+[2019-07-17T11:58:55.719] [TRACE] file - Valid user, getting complete summary
+[2019-07-17T11:59:07.750] [TRACE] file - Finding all users
+[2019-07-17T11:59:07.751] [TRACE] file - Getting quick summary for Sarah T
+[2019-07-17T11:59:07.756] [TRACE] file - Getting quick summary for Laura B
+[2019-07-17T11:59:07.758] [TRACE] file - Getting quick summary for Gergana I
+[2019-07-17T11:59:07.760] [TRACE] file - Getting quick summary for Stephen S
+[2019-07-17T11:59:07.761] [TRACE] file - Getting quick summary for Jon A
+[2019-07-17T11:59:07.762] [TRACE] file - Getting quick summary for Ben B
+[2019-07-17T11:59:07.763] [TRACE] file - Getting quick summary for Todd
+[2019-07-17T11:59:07.764] [TRACE] file - Getting quick summary for Rob S
+[2019-07-17T11:59:07.766] [TRACE] file - Getting quick summary for Chris W
+[2019-07-17T11:59:07.772] [TRACE] file - Getting quick summary for Tim L
+[2019-07-17T11:59:07.773] [TRACE] file - Getting quick summary for Sam N
+[2019-07-17T11:59:07.775] [TRACE] file - Getting quick summary for Dan W
+[2019-07-17T12:00:29.517] [TRACE] file - Importing file DodgyTransactions2015.csv
+[2019-07-17T12:00:29.523] [INFO] file - Importing csv file
+[2019-07-17T12:00:29.541] [TRACE] file - Parsing csv line 1
+[2019-07-17T12:00:29.542] [INFO] file - Creating new user Sarah T
+[2019-07-17T12:00:29.543] [INFO] file - Creating new user Laura B
+[2019-07-17T12:00:29.544] [TRACE] file - Parsing csv line 2
+[2019-07-17T12:00:29.545] [INFO] file - Creating new user Gergana I
+[2019-07-17T12:00:29.546] [INFO] file - Creating new user Stephen S
+[2019-07-17T12:00:29.546] [TRACE] file - Parsing csv line 3
+[2019-07-17T12:00:29.547] [INFO] file - Creating new user Jon A
+[2019-07-17T12:00:29.547] [INFO] file - Creating new user Ben B
+[2019-07-17T12:00:29.548] [TRACE] file - Parsing csv line 4
+[2019-07-17T12:00:29.549] [INFO] file - Creating new user Todd
+[2019-07-17T12:00:29.549] [TRACE] file - Parsing csv line 5
+[2019-07-17T12:00:29.550] [TRACE] file - Parsing csv line 6
+[2019-07-17T12:00:29.551] [INFO] file - Creating new user Rob S
+[2019-07-17T12:00:29.552] [TRACE] file - Parsing csv line 7
+[2019-07-17T12:00:29.553] [TRACE] file - Parsing csv line 8
+[2019-07-17T12:00:29.553] [TRACE] file - Parsing csv line 9
+[2019-07-17T12:00:29.554] [TRACE] file - Parsing csv line 10
+[2019-07-17T12:00:29.555] [INFO] file - Creating new user Chris W
+[2019-07-17T12:00:29.555] [TRACE] file - Parsing csv line 11
+[2019-07-17T12:00:29.556] [INFO] file - Creating new user Tim L
+[2019-07-17T12:00:29.556] [TRACE] file - Parsing csv line 12
+[2019-07-17T12:00:29.557] [INFO] file - Creating new user Sam N
+[2019-07-17T12:00:29.558] [TRACE] file - Parsing csv line 13
+[2019-07-17T12:00:29.558] [TRACE] file - Parsing csv line 14
+[2019-07-17T12:00:29.559] [TRACE] file - Parsing csv line 15
+[2019-07-17T12:00:29.560] [TRACE] file - Parsing csv line 16
+[2019-07-17T12:00:29.560] [INFO] file - Creating new user Dan W
+[2019-07-17T12:00:29.561] [TRACE] file - Parsing csv line 17
+[2019-07-17T12:00:29.562] [TRACE] file - Parsing csv line 18
+[2019-07-17T12:00:29.562] [TRACE] file - Parsing csv line 19
+[2019-07-17T12:00:29.563] [TRACE] file - Parsing csv line 20
+[2019-07-17T12:00:29.564] [TRACE] file - Parsing csv line 21
+[2019-07-17T12:00:29.565] [TRACE] file - Parsing csv line 22
+[2019-07-17T12:00:29.565] [TRACE] file - Parsing csv line 23
+[2019-07-17T12:00:29.566] [TRACE] file - Parsing csv line 24
+[2019-07-17T12:00:29.567] [TRACE] file - Parsing csv line 25
+[2019-07-17T12:00:29.568] [TRACE] file - Parsing csv line 26
+[2019-07-17T12:00:29.568] [TRACE] file - Parsing csv line 27
+[2019-07-17T12:00:29.569] [TRACE] file - Parsing csv line 28
+[2019-07-17T12:00:29.570] [TRACE] file - Parsing csv line 29
+[2019-07-17T12:00:29.571] [TRACE] file - Parsing csv line 30
+[2019-07-17T12:00:29.571] [TRACE] file - Parsing csv line 31
+[2019-07-17T12:00:29.572] [TRACE] file - Parsing csv line 32
+[2019-07-17T12:00:29.573] [TRACE] file - Parsing csv line 33
+[2019-07-17T12:00:29.573] [TRACE] file - Parsing csv line 34
+[2019-07-17T12:00:29.574] [TRACE] file - Parsing csv line 35
+[2019-07-17T12:00:29.574] [TRACE] file - Parsing csv line 36
+[2019-07-17T12:00:29.575] [TRACE] file - Parsing csv line 37
+[2019-07-17T12:00:29.576] [TRACE] file - Parsing csv line 38
+[2019-07-17T12:00:29.576] [TRACE] file - Parsing csv line 39
+[2019-07-17T12:00:29.577] [TRACE] file - Parsing csv line 40
+[2019-07-17T12:00:29.578] [TRACE] file - Parsing csv line 41
+[2019-07-17T12:00:29.578] [TRACE] file - Parsing csv line 42
+[2019-07-17T12:00:29.579] [TRACE] file - Parsing csv line 43
+[2019-07-17T12:00:29.580] [TRACE] file - Parsing csv line 44
+[2019-07-17T12:00:29.581] [TRACE] file - Parsing csv line 45
+[2019-07-17T12:00:29.581] [TRACE] file - Parsing csv line 46
+[2019-07-17T12:00:29.582] [TRACE] file - Parsing csv line 47
+[2019-07-17T12:00:29.582] [TRACE] file - Parsing csv line 48
+[2019-07-17T12:00:29.583] [TRACE] file - Parsing csv line 49
+[2019-07-17T12:00:29.584] [TRACE] file - Parsing csv line 50
+[2019-07-17T12:00:29.585] [TRACE] file - Parsing csv line 51
+[2019-07-17T12:00:30.614] [TRACE] file - Finding all users
+[2019-07-17T12:00:30.615] [TRACE] file - Getting quick summary for Sarah T
+[2019-07-17T12:00:30.620] [TRACE] file - Getting quick summary for Laura B
+[2019-07-17T12:00:30.622] [TRACE] file - Getting quick summary for Gergana I
+[2019-07-17T12:00:30.624] [TRACE] file - Getting quick summary for Stephen S
+[2019-07-17T12:00:30.625] [TRACE] file - Getting quick summary for Jon A
+[2019-07-17T12:00:30.626] [TRACE] file - Getting quick summary for Ben B
+[2019-07-17T12:00:30.627] [TRACE] file - Getting quick summary for Todd
+[2019-07-17T12:00:30.628] [TRACE] file - Getting quick summary for Rob S
+[2019-07-17T12:00:30.629] [TRACE] file - Getting quick summary for Chris W
+[2019-07-17T12:00:30.630] [TRACE] file - Getting quick summary for Tim L
+[2019-07-17T12:00:30.631] [TRACE] file - Getting quick summary for Sam N
+[2019-07-17T12:00:30.632] [TRACE] file - Getting quick summary for Dan W
+[2019-07-17T12:01:09.365] [TRACE] file - Importing file Data/DodgyTransactions2015.csv
+[2019-07-17T12:01:09.370] [INFO] file - Importing csv file
+[2019-07-17T12:01:09.388] [TRACE] file - Parsing csv line 1
+[2019-07-17T12:01:09.390] [INFO] file - Creating new user Sarah T
+[2019-07-17T12:01:09.390] [INFO] file - Creating new user Laura B
+[2019-07-17T12:01:09.392] [TRACE] file - Parsing csv line 2
+[2019-07-17T12:01:09.392] [INFO] file - Creating new user Gergana I
+[2019-07-17T12:01:09.393] [INFO] file - Creating new user Stephen S
+[2019-07-17T12:01:09.394] [TRACE] file - Parsing csv line 3
+[2019-07-17T12:01:09.394] [INFO] file - Creating new user Jon A
+[2019-07-17T12:01:09.395] [INFO] file - Creating new user Ben B
+[2019-07-17T12:01:09.396] [TRACE] file - Parsing csv line 4
+[2019-07-17T12:01:09.396] [INFO] file - Creating new user Todd
+[2019-07-17T12:01:09.397] [TRACE] file - Parsing csv line 5
+[2019-07-17T12:01:09.398] [TRACE] file - Parsing csv line 6
+[2019-07-17T12:01:09.398] [INFO] file - Creating new user Rob S
+[2019-07-17T12:01:09.399] [TRACE] file - Parsing csv line 7
+[2019-07-17T12:01:09.399] [TRACE] file - Parsing csv line 8
+[2019-07-17T12:01:09.400] [TRACE] file - Parsing csv line 9
+[2019-07-17T12:01:09.401] [TRACE] file - Parsing csv line 10
+[2019-07-17T12:01:09.402] [INFO] file - Creating new user Chris W
+[2019-07-17T12:01:09.402] [TRACE] file - Parsing csv line 11
+[2019-07-17T12:01:09.403] [INFO] file - Creating new user Tim L
+[2019-07-17T12:01:09.404] [TRACE] file - Parsing csv line 12
+[2019-07-17T12:01:09.405] [INFO] file - Creating new user Sam N
+[2019-07-17T12:01:09.406] [TRACE] file - Parsing csv line 13
+[2019-07-17T12:01:09.406] [TRACE] file - Parsing csv line 14
+[2019-07-17T12:01:09.407] [TRACE] file - Parsing csv line 15
+[2019-07-17T12:01:09.408] [TRACE] file - Parsing csv line 16
+[2019-07-17T12:01:09.408] [INFO] file - Creating new user Dan W
+[2019-07-17T12:01:09.409] [TRACE] file - Parsing csv line 17
+[2019-07-17T12:01:09.410] [TRACE] file - Parsing csv line 18
+[2019-07-17T12:01:09.411] [TRACE] file - Parsing csv line 19
+[2019-07-17T12:01:09.412] [TRACE] file - Parsing csv line 20
+[2019-07-17T12:01:09.413] [TRACE] file - Parsing csv line 21
+[2019-07-17T12:01:09.413] [TRACE] file - Parsing csv line 22
+[2019-07-17T12:01:09.414] [TRACE] file - Parsing csv line 23
+[2019-07-17T12:01:09.415] [TRACE] file - Parsing csv line 24
+[2019-07-17T12:01:09.416] [TRACE] file - Parsing csv line 25
+[2019-07-17T12:01:09.416] [TRACE] file - Parsing csv line 26
+[2019-07-17T12:01:09.417] [TRACE] file - Parsing csv line 27
+[2019-07-17T12:01:09.418] [TRACE] file - Parsing csv line 28
+[2019-07-17T12:01:09.419] [TRACE] file - Parsing csv line 29
+[2019-07-17T12:01:09.419] [TRACE] file - Parsing csv line 30
+[2019-07-17T12:01:09.420] [TRACE] file - Parsing csv line 31
+[2019-07-17T12:01:09.421] [TRACE] file - Parsing csv line 32
+[2019-07-17T12:01:09.421] [TRACE] file - Parsing csv line 33
+[2019-07-17T12:01:09.422] [TRACE] file - Parsing csv line 34
+[2019-07-17T12:01:09.423] [TRACE] file - Parsing csv line 35
+[2019-07-17T12:01:09.424] [TRACE] file - Parsing csv line 36
+[2019-07-17T12:01:09.424] [TRACE] file - Parsing csv line 37
+[2019-07-17T12:01:09.425] [TRACE] file - Parsing csv line 38
+[2019-07-17T12:01:09.426] [TRACE] file - Parsing csv line 39
+[2019-07-17T12:01:09.426] [TRACE] file - Parsing csv line 40
+[2019-07-17T12:01:09.427] [TRACE] file - Parsing csv line 41
+[2019-07-17T12:01:09.428] [TRACE] file - Parsing csv line 42
+[2019-07-17T12:01:09.428] [TRACE] file - Parsing csv line 43
+[2019-07-17T12:01:09.429] [TRACE] file - Parsing csv line 44
+[2019-07-17T12:01:09.430] [TRACE] file - Parsing csv line 45
+[2019-07-17T12:01:09.430] [TRACE] file - Parsing csv line 46
+[2019-07-17T12:01:09.431] [TRACE] file - Parsing csv line 47
+[2019-07-17T12:01:09.432] [TRACE] file - Parsing csv line 48
+[2019-07-17T12:01:09.432] [TRACE] file - Parsing csv line 49
+[2019-07-17T12:01:09.433] [TRACE] file - Parsing csv line 50
+[2019-07-17T12:01:09.433] [TRACE] file - Parsing csv line 51
+[2019-07-17T12:01:10.854] [TRACE] file - Finding all users
+[2019-07-17T12:01:10.857] [TRACE] file - Getting quick summary for Sarah T
+[2019-07-17T12:01:10.860] [TRACE] file - Getting quick summary for Laura B
+[2019-07-17T12:01:10.863] [TRACE] file - Getting quick summary for Gergana I
+[2019-07-17T12:01:10.865] [TRACE] file - Getting quick summary for Stephen S
+[2019-07-17T12:01:10.866] [TRACE] file - Getting quick summary for Jon A
+[2019-07-17T12:01:10.867] [TRACE] file - Getting quick summary for Ben B
+[2019-07-17T12:01:10.883] [TRACE] file - Getting quick summary for Todd
+[2019-07-17T12:01:10.889] [TRACE] file - Getting quick summary for Rob S
+[2019-07-17T12:01:10.891] [TRACE] file - Getting quick summary for Chris W
+[2019-07-17T12:01:10.892] [TRACE] file - Getting quick summary for Tim L
+[2019-07-17T12:01:10.893] [TRACE] file - Getting quick summary for Sam N
+[2019-07-17T12:01:10.905] [TRACE] file - Getting quick summary for Dan W
