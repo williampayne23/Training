@@ -2,36 +2,35 @@ fs = require('fs');
 xml = require("xml");
 moment = require("moment");
 
-Bank = require('./bank');
-
-module.exports = function (file) {
+module.exports = function (file, transactions) {
     let extention = file.substring(file.lastIndexOf("."));
     switch (extention) {
         case ".csv":
-            toCSV(file);
+            toCSV(file, transactions);
             break;
         case ".json":
-            toJSON(file);
+            toJSON(file, transactions);
             break;
         case ".xml":
-            toXML(file);
+            toXML(file, transactions);
             break;
         default:
+            console.log("Not a valid file format");
             break;
     }
 }
 
-function toCSV(file) {
+function toCSV(file, transactions) {
     let transactionLineArray = ["Date, From, To, Narrative, Amount"];
-    Bank.transactions.forEach((t) => {
+    transactions.forEach((t) => {
         transactionLineArray.push(`${t.date.format("DD/MM/YYYY")},${t.from},${t.to},${t.reason},${t.amount}`)
     })
     fs.writeFileSync(file, transactionLineArray.join("\n"));
 }
 
-function toJSON(file) {
+function toJSON(file, transactions) {
     let jsonFormattedTransactions = [];
-    Bank.transactions.forEach((t) => {
+    transactions.forEach((t) => {
         formattedTransaction = {
             Date: t.date.format(),
             FromAccount: t.from,
@@ -45,12 +44,12 @@ function toJSON(file) {
     fs.writeFileSync(file, outputString);
 }
 
-function toXML(file) {
+function toXML(file, transactions) {
     let xmlFormattedTransactions = {
         TransactionList: []
     }
 
-    Bank.transactions.forEach(t => {
+    transactions.forEach(t => {
         xmlFormattedTransaction = {
             SupportTransaction: [{
                 _attr: {

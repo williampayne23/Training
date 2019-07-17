@@ -7,131 +7,133 @@ const xmlparse = require('fast-xml-parser');
 const he = require('he');
 const moment = require("moment")
 
-const Bank = require("./bank")
-
-let lineNum = 0;
-
-const invalidTransactions = [];
-
-function checkInvalids() {
-    if (invalidTransactions.length !== 0) {
-        console.log("Finished parsing file but ignored these invalid entries please fix them!");
-        invalidTransactions.forEach(t => console.log(`${t[0]}: ${t[1]}`))
-    }
-}
-
-module.exports = async function (file) {
-    lineNum = 0;
-    logger.trace("Importing file " + file)
-    if (!fs.existsSync(file)) {
-        logger.warn("Invalid file given");
-        console.log("No such file")
-        return null;
-    }
-    if (Bank.fileIsLoaded(file)) {
-        logger.warn("Repeat File");
-        console.log("We've already loaded this file");
-    }
+module.exports = function (file) {
     let extention = file.substring(file.lastIndexOf('.'))
     if (extention === '.csv') {
-        logger.info("Importing csv file");
-        checkInvalids();
-        return await parseCSV(file);
+        return new csvParser(file);
     }
     if (extention === '.json') {
-        logger.info("Importing json file");
-        checkInvalids();
-        return await parseJSON(file);
+        return new jsonParser(file);
     }
     if (extention === '.xml') {
-        logger.info("Importing xml file");
-        checkInvalids();
-        return await parseXML(file);
+        return new xmlParser(file);
     }
-
     logger.error("Invalid file type" + extension);
     console.log("This is an invalid file type: " + extention);
 }
 
-function parseCSV(filename) {
-    return new Promise((resolve, reject) => {
-        const parser = csv({
-            objectMode: true
-        }, (err, result) => {
-            if (err) {
-                console.error(err);
-                logger.error(err)
-                reject(err);
-            } else {
-                result.shift();
-                result.forEach(line => {
-                    line[0] = moment(line[0], "DD/MM/YYYY");
-                    parseLine(line);
-                });
-                resolve();
-            }
+class Parser {
+
+    constructor(file) {
+        this.file = file;
+        this.validTransactionLines = [];
+        this.invalidTransactionLines = [];
+        this.lineNum = 0;
+        if (!fs.existsSync(file)) {
+            logger.warn("Invalid file given");
+            console.log("No such file")
+            return null;
+        }
+    }
+
+    async getParsedTransactionLines() {
+        await this.parse();
+        return this.validTransactionLines;
+    }
+
+    async parse() {
+
+    }
+
+    validateLine(line) {
+        this.lineNum++;
+        if (line.length !== 5) {
+            logger.error("Line has " + line.length + " elements insead of 5");
+            this.invalidTransactionLines.push([this.lineNum, line]);
+            return;
+        }
+
+        line[4] = parseFloat(line[4]);
+        if (!line[4] && line[4] !== 0) {
+            this.invalidTransactionLines.push([this.lineNum, line]);
+            return;
+        }
+
+        if (!line[0].isValid()) {
+            this.invalidTransactionLines.push([this.lineNum, line]);
+            return;
+        }
+        this.validTransactionLines.push(line);
+    }
+
+    checkInvalids() {
+        if (this.invalidTransactionLines.length > 0) {
+            console.log("These invalid lines were ommited, please fix them")
+            this.invalidTransactionLines.forEach((l) => {
+                console.log(`${l[0]}: ${l[1]}`);
+            })
+        }
+    }
+}
+
+class csvParser extends Parser {
+    async parse() {
+        return new Promise((resolve, reject) => {
+            const parser = csv({
+                objectMode: true
+            }, (err, result) => {
+                if (err) {
+                    console.error(err);
+                    logger.error(err)
+                    reject(err);
+                } else {
+                    result.shift();
+                    const transactionLines = [];
+                    result.forEach(line => {
+                        line[0] = moment(line[0], "DD/MM/YYYY");
+                        this.validateLine(line);
+                    });
+                    resolve(this.validTransactionEntries);
+                }
+            })
+
+            fs.createReadStream(this.file).pipe(parser);
+        })
+    }
+}
+
+class jsonParser extends Parser {
+    async parse() {
+        let data = await fs.readFileSync(this.file);
+        let parsedJson = JSON.parse(data);
+        parsedJson.forEach((transactionObject) => {
+            const date = moment(transactionObject.Date);
+            const line = [date, transactionObject.FromAccount, transactionObject.ToAccount, transactionObject.Narrative, transactionObject.Amount]
+            this.validateLine(line);
+        });
+    }
+}
+
+class xmlParser extends Parser {
+    async parse() {
+        let options = {
+            ignoreAttributes: false,
+            attributeNamePrefix: "",
+            attrValueProcessor: a => he.decode(a, {
+                isAttributeValue: true
+            })
+        }
+        let parsedXml = xmlparse.parse(fs.readFileSync(this.file, "utf8"), options).TransactionList.SupportTransaction;
+        parsedXml.forEach((transactionObject) => {
+            let date = moment('31/12/1899', "DD/MM/YYYY").add(transactionObject.Date, 'days');
+            let line = [date,
+                transactionObject.Parties.From,
+                transactionObject.Parties.To,
+                transactionObject.Description,
+                transactionObject.Value
+            ];
+            this.validateLine(line);
         })
 
-        fs.createReadStream(filename).pipe(parser);
-    })
-}
-async function parseJSON(file) {
-    let data = await fs.readFileSync(file);
-    let parsedJson = JSON.parse(data);
-    parsedJson.forEach((transactionObject) => {
-        date = moment(transactionObject.Date);
-        let line = [date, transactionObject.FromAccount, transactionObject.ToAccount, transactionObject.Narrative, transactionObject.Amount]
-        parseLine(line);
-    });
-}
-async function parseXML(file) {
-    options = {
-        ignoreAttributes: false,
-        attributeNamePrefix: "",
-        attrValueProcessor: a => he.decode(a, {
-            isAttributeValue: true
-        })
     }
-    parsedXml = xmlparse.parse(fs.readFileSync(file, "utf8"), options).TransactionList.SupportTransaction;
-    parsedXml.forEach((transactionObject) => {
-        date = moment('31/12/1899', "DD/MM/YYYY").add(transactionObject.Date, 'days');
-        let line = [date,
-            transactionObject.Parties.From,
-            transactionObject.Parties.To,
-            transactionObject.Description,
-            transactionObject.Value
-        ];
-        parseLine(line);
-    })
-
-}
-
-function parseLine(line) {
-    lineNum++;
-    logger.trace("Parsing csv line " + lineNum)
-    validatedLine = validateLine(line);
-    if (validatedLine !== null) {
-        Bank.addTransactionFromLine(validatedLine)
-    }
-}
-
-function validateLine(line) {
-    if (line.length !== 5) {
-        logger.error("Line has " + line.length + " elements insead of 5");
-        invalidTransactions.push([lineNum, line]);
-        return null;
-    }
-
-    line[4] = parseFloat(line[4]);
-    if (!line[4] && line[4] !== 0) {
-        invalidTransactions.push([lineNum, line]);
-        return null;
-    }
-
-    if (!line[0].isValid()) {
-        invalidTransactions.push([lineNum, line]);
-        return null;
-    }
-
-    return line;
 }

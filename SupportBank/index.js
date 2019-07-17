@@ -1,8 +1,6 @@
 const log4js = require('log4js');
 const readlineSync = require("readline-sync");
 
-const importer = require("./src/importer");
-const exporter = require("./src/exporter");
 const Bank = require("./src/bank");
 
 log4js.configure({
@@ -20,30 +18,29 @@ log4js.configure({
     }
 });
 
-const logger = log4js.getLogger('file');
-
 menu();
 
 async function menu() {
+    const bank = new Bank();
     while (true) {
         let input = readlineSync.question("Give a command: ");
         const command = getCommand(input);
-        switch (command[0]) {
+        switch (command.command) {
             case "List All":
-                Bank.printAllUserSummary();
+                bank.printAllUserSummary();
                 break;
             case "List [":
-                Bank.printUserInfo(command[1]);
+                bank.printUserInfo(command.data);
                 break;
             case "Import File [":
-                await importer(command[1]);
+                await bank.import(command.data);
                 break;
             case "Export File [":
-                exporter(command[1]);
+                bank.export(command.data);
                 break;
             case "List Files":
                 console.log("These files are loaded...")
-                console.log(Bank.getLoadedFiles().join("\n"));
+                console.log(bank.getLoadedFiles().join("\n"));
                 break;
             case "Stop":
                 return;
@@ -57,8 +54,13 @@ async function menu() {
 function getCommand(input) {
     openIndex = input.indexOf('[') + 1;
     if (openIndex === 0) {
-        return [input, ""];
+        return {
+            command: input
+        }
     } else {
-        return [input.substring(0, openIndex), input.substring(openIndex, input.length - 1)]
+        return {
+            command: input.substring(0, openIndex),
+            data: input.substring(openIndex, input.length - 1)
+        }
     }
 }
