@@ -1,7 +1,7 @@
 const log4js = require('log4js');
 const readlineSync = require("readline-sync");
 
-const parser = require("./src/importer");
+const importer = require("./src/importer");
 const exporter = require("./src/exporter");
 const Bank = require("./src/bank");
 
@@ -30,14 +30,13 @@ async function menu() {
         const command = getCommand(input);
         switch (command[0]) {
             case "List All":
-                logger.trace("Finding all users")
                 Bank.printAllUserSummary();
                 break;
             case "List [":
                 Bank.printUserInfo(command[1]);
                 break;
             case "Import File [":
-                await parser(command[1]);
+                await importer(command[1]);
                 break;
             case "Export File [":
                 exporter(command[1]);
