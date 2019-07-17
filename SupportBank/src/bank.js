@@ -62,11 +62,7 @@ module.exports = class Bank {
     }
 
     fileIsLoaded(file) {
-        if (this.files.includes(file)) {
-            return true;
-        }
-        this.files.push(file);
-        return false;
+        return this.files.includes(file)
     }
 
     getLoadedFiles() {
@@ -74,8 +70,14 @@ module.exports = class Bank {
     }
 
     async import(file) {
+        if (this.fileIsLoaded(file)) {
+            console.log("This file is already loaded")
+            return;
+        }
+        this.files.push(file);
+
         const parser = importer(file);
-        if (parser != null) {
+        if (parser !== null) {
             let lines = await parser.getParsedTransactionLines();
             lines.forEach((line) => {
                 this.addTransactionFromLine(line);
