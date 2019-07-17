@@ -75,14 +75,19 @@ module.exports = class Bank {
 
     async import(file) {
         const parser = importer(file);
-        let lines = await parser.getParsedTransactionLines();
-        lines.forEach((line) => {
-            this.addTransactionFromLine(line);
-        })
-        parser.checkInvalids();
+        if (parser != null) {
+            let lines = await parser.getParsedTransactionLines();
+            lines.forEach((line) => {
+                this.addTransactionFromLine(line);
+            })
+            parser.checkInvalids();
+        }
     }
 
     export (file) {
-        exporter(file, this.transactions);
+        let fileExporter = exporter(file);
+        if (fileExporter !== null) {
+            fileExporter.write(this.transactions);
+        }
     }
 }
