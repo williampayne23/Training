@@ -2,8 +2,8 @@ Bank = require('./bank');
 fs = require('fs')
 
 module.exports = function (file) {
-    extention = file.substring(file.lastIndexOf("."));
-    switch (extension) {
+    let extention = file.substring(file.lastIndexOf("."));
+    switch (extention) {
         case ".csv":
             csv(file);
             break;
@@ -19,17 +19,27 @@ module.exports = function (file) {
 }
 
 function csv(file) {
-    let transactionLineArray = [];
+    let transactionLineArray = ["Date, From, To, Narrative, Amount"];
     Bank.transactions.forEach((t) => {
-        if (t.valid) {
-            transactionLineArray.push(`${t.date.format("DD/MM/YYYY")},${t.from},${t.to},${t.reason},${t.amount}`)
-        }
+        transactionLineArray.push(`${t.date.format("DD/MM/YYYY")},${t.from},${t.to},${t.reason},${t.amount}`)
     })
     fs.writeFileSync(file, transactionLineArray.join("\n"));
 }
 
 function json(file) {
-
+    jsonFormattedTransactions = [];
+    Bank.transactions.forEach((t) => {
+        formattedTransaction = {
+            Date: t.date.format(),
+            FromAccount: t.from,
+            ToAccount: t.to,
+            Narrative: t.reason,
+            Amount: t.amount
+        }
+        jsonFormattedTransactions.push(formattedTransaction);
+    })
+    outputString = JSON.stringify(jsonFormattedTransactions, null, 4);
+    fs.writeFileSync(file, outputString);
 }
 
 function xml(file) {
