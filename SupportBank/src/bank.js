@@ -7,6 +7,7 @@ const Transaction = require("./transaction");
 module.exports = {
     transactions: [],
     users: [],
+    files: [],
     addTransaction(transaction) {
         this.transactions.push(transaction);
         to = this.getOrMakeUser(transaction.to);
@@ -47,5 +48,15 @@ module.exports = {
             logger.trace("Getting quick summary for " + u.username)
             console.log(u.toString());
         });
+    },
+    fileIsLoaded(file) {
+        if (this.files.includes(file)) {
+            return true;
+        }
+        this.files.push(file);
+        return false;
+    },
+    getLoadedFiles() {
+        return this.files;
     }
 }

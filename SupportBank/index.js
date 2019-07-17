@@ -1,7 +1,7 @@
 const log4js = require('log4js');
 const readlineSync = require("readline-sync");
 
-const parser = require("./src/parser");
+const parser = require("./src/importer");
 const exporter = require("./src/exporter");
 const Bank = require("./src/bank");
 
@@ -28,7 +28,6 @@ async function menu() {
     while (true) {
         let input = readlineSync.question("Give a command: ");
         const command = getCommand(input);
-        console.log(command[0])
         switch (command[0]) {
             case "List All":
                 logger.trace("Finding all users")
@@ -42,6 +41,10 @@ async function menu() {
                 break;
             case "Export File [":
                 exporter(command[1]);
+                break;
+            case "List Files":
+                console.log("These files are loaded...")
+                console.log(Bank.getLoadedFiles().join("\n"));
                 break;
             case "Stop":
                 return;

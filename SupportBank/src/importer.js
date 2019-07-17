@@ -28,6 +28,10 @@ module.exports = async function (file) {
         console.log("No such file")
         return null;
     }
+    if (Bank.fileIsLoaded(file)) {
+        logger.warn("Repeat File");
+        console.log("We've already loaded this file");
+    }
     let extention = file.substring(file.lastIndexOf('.'))
     if (extention === '.csv') {
         logger.info("Importing csv file");
