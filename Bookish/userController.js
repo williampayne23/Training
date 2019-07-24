@@ -1,6 +1,6 @@
 const { Router } = require('express');
-const database = require('./database');
 const jwt = require('jsonwebtoken');
+const { User } = require('./sequelizeSetup');
 
 
 class UserController {
@@ -12,18 +12,29 @@ class UserController {
 
 
     async login(req, res) {
-        const result = await database.getLogin(req.query.username, req.query.password);
-        res.send(jwt.sign({ data: result.Primary }, 'secret'));
-        res.send(result);
+        const result = await User.findOne({ where: { User_name: req.query.user, Password: req.query.password } });
+        if (result != null) {
+            res.send(jwt.sign({ data: result.id }, 'secret'));
+        }
+        else {
+            res.send('Failed Login');
+        }
     }
 
     async createAccount(req, res) {
-        await database.newUser(req.query.username, req.query.password);
-        const result = await database.getLogin(req.query.username, req.query.password);
-        res.send(jwt.sign({ data: result.Primary }, 'secret'));
-        res.send(result);
+        const result = await User.findOrCreate({
+            where: {
+                User_name: req.query.user,
+                Password: req.query.password
+            }
+        });
+        if (result != null) {
+            res.send(jwt.sign({ data: result.id }, 'secret'));
+        }
+        else {
+            res.send('Failed Login');
+        }
     }
-
 }
 
 

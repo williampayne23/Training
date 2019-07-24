@@ -1,7 +1,7 @@
 const { Router } = require('express');
-const database = require('./database');
 const passport = require('passport');
 
+const { Author } = require('./sequelizeSetup');
 
 class AuthorController {
     constructor() {
@@ -11,20 +11,19 @@ class AuthorController {
     }
 
     async getAuthors(req, res) {
-        const result = await database.getAuthors();
+        const result = await Author.findAll();
         res.send(result);
     }
 
     async createAuthor(req, res) {
         try {
-            database.newAuthor(req.query.author);
+            await Author.create({ 'Name': req.query.name });
             res.send('Created');
         } catch (e) {
             res.status(500);
-            res.send('Failed');
+            res.send(e);
         }
     }
-
 }
 
 module.exports = new AuthorController().router;

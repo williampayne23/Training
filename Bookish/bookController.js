@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const passport = require('passport');
-const database = require('./database');
 
+const { Book, Author, AuthorLink } = require('./sequelizeSetup');
 
 class BookController {
     constructor() {
@@ -13,40 +13,41 @@ class BookController {
     }
 
     async getBook(req, res) {
-        const result = await database.getBooks();
+        const result = await Book.findAll();
         res.send(result);
     }
 
     async createBook(req, res) {
-        try {
-            const book = await database.getBooksByTitle(req.query.title);
-            res.send(book);
-        } catch (e) {
-            await database.newBook(req.query.title, req.query.ISBN, req.query.copies);
-            const book = await database.getBooksByTitle(req.query.title);
-            try {
-                database.getAuthorByPrimaryKey(req.query.author);
-                await database.newAuthorLink(book['Primary'], req.query.author);
-                res.send(book);
-            } catch (e) {
-                res.status(400);
-                res.send('No author');
-            }
+        const authorResult = await Author.findOne({ where: { id: req.query.author } });
+        const author = authorResult.dataValues;
+        if (author) {
+            const bookResult = await Book.findOrCreate({
+                where: {
+                    Title: req.query.title,
+                    ISBN: req.query.ISBN,
+                    Copies: req.query.copies
+                }
+            });
+            const book = bookResult[0].dataValues;
+            AuthorLink.create({ Author: author.id, Book: book.id });
+            res.send('Created');
+        }
+        else {
+            res.send('Failed');
         }
     }
 
     async getBooksByTitle(req, res) {
-        const result = await database.getBooksByTitle(req.query.title);
+        const result = await Book.findAll({ where: { Title: req.query.title } });
         res.send(result);
     }
 
 
     async getBooksByAuthor(req, res) {
-        const result = await database.getBooksByAuthor(req.query.author);
-        res.send(result);
+        const result = await Author.findOne({ where: { Name: req.query.author } });
+        const links = await AuthorLink.findAll({ where: { Author: result.id }, include: { model: Book } });
+        res.send(links);
     }
-
-
 }
 
 module.exports = new BookController().router;
