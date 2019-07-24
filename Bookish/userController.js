@@ -17,6 +17,7 @@ class UserController {
             res.send(jwt.sign({ data: result.id }, 'secret'));
         }
         else {
+            res.status(400);
             res.send('Failed Login');
         }
     }
@@ -32,6 +33,7 @@ class UserController {
             res.send(jwt.sign({ data: result.id }, 'secret'));
         }
         else {
+            res.status(400);
             res.send('Failed Login');
         }
     }

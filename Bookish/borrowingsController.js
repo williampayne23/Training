@@ -14,7 +14,12 @@ class BorrowingsController {
 
     async getBooksCheckedOutByUser(req, res) {
         const borrowings = await Borrowing.findAll({ where: { User: req.session.passport.user, Return_date: null }, include: { model: Book } });
-        res.send(borrowings);
+        if (borrowings.length > 0) {
+            res.send(borrowings);
+        } else {
+            res.status(400);
+            res.send('No borrowings on this account');
+        }
     }
 
     async checkoutBook(req, res) {
@@ -22,23 +27,33 @@ class BorrowingsController {
         const borrowings = await Borrowing.findAll({ where: { Book: req.query.book, Return_date: null } });
         const number_of_borrowings = borrowings.length;
         const book = await Book.findOne({ where: { id: req.query.book } });
+        if (book === null) {
+            res.status(404);
+            res.send('No such book');
+            return;
+        }
         const copies = book.Copies;
         if (copies > number_of_borrowings) {
             Borrowing.create({ Due_date: dueDate, User: req.session.passport.user, Book: req.query.book });
             res.send('Book checked out.');
         }
         else {
+            res.status(400);
             res.send('Not enough copies.');
         }
     }
 
     async returnBook(req, res) {
         const borrowing = await Borrowing.findOne({ where: { Book: req.query.book, User: req.session.passport.user, Return_date: null } });
-        console.log(borrowing);
-        const result = await borrowing.update({
-            Return_date: moment()
-        });
-        res.send(result);
+        if (borrowing) {
+            const result = await borrowing.update({
+                Return_date: moment()
+            });
+            res.send(result);
+        } else {
+            res.status(400);
+            res.send('No borrowing for this book');
+        }
     }
 }
 

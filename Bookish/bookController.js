@@ -33,6 +33,7 @@ class BookController {
             res.send('Created');
         }
         else {
+            res.status(400);
             res.send('Failed');
         }
     }
@@ -45,8 +46,13 @@ class BookController {
 
     async getBooksByAuthor(req, res) {
         const result = await Author.findOne({ where: { Name: req.query.author } });
-        const links = await AuthorLink.findAll({ where: { Author: result.id }, include: { model: Book } });
-        res.send(links);
+        if (result) {
+            const links = await AuthorLink.findAll({ where: { Author: result.id }, include: { model: Book } });
+            res.send(links);
+        } else {
+            res.status(404);
+            res.send('No such author');
+        }
     }
 }
 
