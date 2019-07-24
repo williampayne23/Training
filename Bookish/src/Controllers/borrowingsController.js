@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const moment = require('moment');
 const passport = require('passport');
-const { Borrowing, Book } = require('./sequelizeSetup');
+const { Borrowing, Book } = require('../models');
 
 
 class BorrowingsController {
@@ -33,7 +33,7 @@ class BorrowingsController {
             return;
         }
         const copies = book.Copies;
-        if (copies > number_of_borrowings) {
+        if (copies >= number_of_borrowings) {
             Borrowing.create({ Due_date: dueDate, User: req.session.passport.user, Book: req.query.book });
             res.send('Book checked out.');
         }

@@ -3,10 +3,10 @@ const passport = require('passport');
 const JwtStrategy = require('passport-jwt').Strategy;
 const ExtractJwt = require('passport-jwt').ExtractJwt;
 
-const BookRoutes = require('./bookController');
-const BorrowingRoutes = require('./borrowingsController');
-const AuthorRoutes = require('./authorController');
-const UserRoutes = require('./userController');
+const BookRoutes = require('./src/Controllers/bookController');
+const BorrowingRoutes = require('./src/Controllers/borrowingsController');
+const AuthorRoutes = require('./src/Controllers/authorController');
+const UserRoutes = require('./src/Controllers/userController');
 
 const app = express();
 
@@ -15,7 +15,6 @@ var opts = {};
 opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 opts.secretOrKey = 'secret';
 passport.use(new JwtStrategy(opts, function (jwt_payload, done) {
-    console.log(jwt_payload);
     return done(null, jwt_payload.data);
 }));
 

@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const passport = require('passport');
 
-const { Author } = require('./sequelizeSetup');
+const { Author } = require('../models');
 
 class AuthorController {
     constructor() {
